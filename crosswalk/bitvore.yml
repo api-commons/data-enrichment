@@ -1,0 +1,17 @@
+provider: bitvore
+apis_io: https://apis.io/providers/bitvore/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  company_profile:
+    path_segment:
+    - organizations
+    properties:
+      name: name
+      country: country
+      city: city
+      state: state
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/bitvore-corporate-openapi.yml#GET /v2/corp/organizations/{bvId}
+    - openapi/_original/bitvore-corporate-swagger.json#GET /v2/corp/organizations/{bvId}

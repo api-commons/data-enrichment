@@ -1,0 +1,14 @@
+provider: leo
+apis_io: https://apis.io/providers/leo/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - prospects
+    properties:
+      location: city
+      linkedin_url: linkedinUrl
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/leo-openapi.json#GET /v1/prospects/{prospectId}

@@ -1,0 +1,37 @@
+provider: surfe
+apis_io: https://apis.io/providers/surfe/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - enrich
+    properties:
+      company_name: companyName
+      first_name: firstName
+      last_name: lastName
+      job_title: jobTitle
+      linkedin_url: linkedinUrl
+      company_domain: companyDomain
+      email: emails
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/surfe-openapi.yml#GET /people/enrich/{id}
+    - openapi/_original/surfe-openapi.yml#POST /people/enrich
+  company_profile:
+    path_segment:
+    - enrich
+    properties:
+      name: name
+      domain: domain
+      description: description
+      employee_count: employeeCount
+      industry: industry
+      country: hqCountry
+      revenue: revenue
+      status: status
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/surfe-openapi.yml#GET /companies/enrich/{id}
+    - openapi/_original/surfe-openapi.yml#POST /companies/enrich

@@ -1,0 +1,51 @@
+aid: common-data-enrichment
+name: Data Enrichment
+type: Common
+description: 'The common Data Enrichment vocabulary, distilled from the harvested OpenAPI of 137 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Data Enrichment
+- Lead Generation
+- B2B Data
+- People Data
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/data-enrichment/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-data-enrichment:data-enrichment
+  name: Common Data Enrichment Interface
+  description: The Data Enrichment interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/data-enrichment
+  tags:
+  - Data Enrichment
+  - Lead Generation
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/data-enrichment/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/data-enrichment/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/data-enrichment/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: person_profile
+    url: https://raw.githubusercontent.com/api-commons/data-enrichment/main/schema/person_profile.json
+  - type: JSONSchema
+    name: company_profile
+    url: https://raw.githubusercontent.com/api-commons/data-enrichment/main/schema/company_profile.json
+  - type: JSONSchema
+    name: email_lookup
+    url: https://raw.githubusercontent.com/api-commons/data-enrichment/main/schema/email_lookup.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/data-enrichment/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

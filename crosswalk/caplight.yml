@@ -1,0 +1,24 @@
+provider: caplight
+apis_io: https://apis.io/providers/caplight/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  company_profile:
+    path_segment:
+    - companies
+    properties:
+      name: name
+      domain: domain
+      description:
+      - description
+      - shortDescription
+      id: id
+      industry: industry
+      country: hqCountry
+      location: location
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/caplight-rest-api-openapi-original.json#GET /v1/companies
+    - openapi/_original/caplight-rest-api-openapi-original.json#GET /v2/companies
+    - openapi/_original/caplight-rest-api-openapi-original.json#GET /v2/companies/{companyId}

@@ -1,0 +1,43 @@
+provider: orthogonal
+apis_io: https://apis.io/providers/orthogonal/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - enrich
+    - people
+    - person
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /aviato/person/enrich
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /captaindata/people/enrich
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /company-enrich/people
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /crustdata/screener/person/enrich
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /peopledatalabs/v5/person/enrich
+  company_profile:
+    path_segment:
+    - companies
+    - company
+    - enrich
+    - organizations
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /apollo/api/v1/organizations/{id}
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /aviato/company/enrich
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /aviato/person/investments/companies
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /captaindata/companies/enrich
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /company-enrich/companies
+  email_lookup:
+    path_segment:
+    - email-verification
+    - email-finder
+    - email-verifier
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /tomba/v1/email-finder
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /tomba/v1/email-verifier
+    - openapi/_original/orthogonal-marketplace-openapi.json#POST /icypeas/api/email-verification

@@ -1,0 +1,13 @@
+provider: ploid
+apis_io: https://apis.io/providers/ploid/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - person
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/ploid-openapi.json#POST /v1/person
+    - openapi/_original/ploid-openapi.yml#POST /v1/person

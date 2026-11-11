@@ -1,0 +1,24 @@
+provider: hunter-io
+apis_io: https://apis.io/providers/hunter-io/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  email_lookup:
+    path_segment:
+    - email-finder
+    - email-verifier
+    properties:
+      email: email
+      result:
+      - status
+      - result
+      catch_all: accept_all
+      domain: domain
+      first_name: first_name
+      last_name: last_name
+      linkedin_url: linkedin_url
+      score: score
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/hunter-email-finder-api-openapi.yml#GET /email-finder
+    - openapi/_original/hunter-email-verifier-api-openapi.yml#GET /email-verifier

@@ -1,0 +1,30 @@
+provider: customeros
+apis_io: https://apis.io/providers/customeros/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - person
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/customeros-enrich-openapi.yml#GET /enrich/v1/person
+    - openapi/_original/customeros-swagger.json#GET /enrich/v1/person
+  company_profile:
+    path_segment:
+    - organizations
+    - organization
+    properties:
+      name: name
+      domain: website
+      linkedin_url: linkedinUrl
+      status: status
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/customeros-customerbase-openapi.yml#GET /customerbase/v1/organizations/{id}
+    - openapi/_original/customeros-customerbase-openapi.yml#POST /customerbase/v1/organizations
+    - openapi/_original/customeros-enrich-openapi.yml#GET /enrich/v1/organization
+    - openapi/_original/customeros-swagger.json#GET /customerbase/v1/organizations/{id}
+    - openapi/_original/customeros-swagger.json#GET /enrich/v1/organization

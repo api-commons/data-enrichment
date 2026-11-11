@@ -1,0 +1,15 @@
+provider: topograph
+apis_io: https://apis.io/providers/topograph/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  company_profile:
+    path_segment:
+    - company
+    properties:
+      id: id
+      country: countryCode
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/topograph-openapi-original.json#GET /v2/company/{requestId}
+    - openapi/_original/topograph-openapi-original.json#POST /v2/company

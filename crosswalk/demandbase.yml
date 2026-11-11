@@ -1,0 +1,30 @@
+provider: demandbase
+apis_io: https://apis.io/providers/demandbase/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  company_profile:
+    path_segment:
+    - companies
+    - company
+    properties:
+      name:
+      - name
+      - companyName
+      domain: website
+      description: description
+      employee_count: employeeCount
+      industry:
+      - industries
+      - naics
+      - sic
+      country: country
+      city: city
+      revenue: revenue
+      state: state
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/demandbase-b2b-openapi.json#GET /company/{companyId}
+    - openapi/_original/demandbase-b2b-openapi.json#POST /companies
+    - openapi/_original/demandbase-b2b-openapi.yml#GET /company/{companyId}
+    - openapi/_original/demandbase-b2b-openapi.yml#POST /companies

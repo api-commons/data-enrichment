@@ -1,0 +1,46 @@
+provider: peopledatalabs
+apis_io: https://apis.io/providers/peopledatalabs/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - enrich
+    properties:
+      name: full_name
+      company_name: job_company_name
+      first_name: first_name
+      last_name: last_name
+      location: location_name
+      job_title:
+      - job_title
+      - job_title_role
+      linkedin_url: linkedin_url
+      company_domain: job_company_website
+      email:
+      - work_email
+      - personal_emails
+      - emails
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/peopledatalabs-docs-openapi.json#GET /v5/person/enrich
+    - openapi/_original/peopledatalabs-openapi.yml#GET /v5/person/enrich
+  company_profile:
+    path_segment:
+    - enrich
+    properties:
+      name: name
+      domain: website
+      description: summary
+      id: id
+      employee_count:
+      - employee_count
+      - size
+      industry: industry
+      linkedin_url: linkedin_url
+      location: location
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/peopledatalabs-docs-openapi.json#GET /v5/company/enrich
+    - openapi/_original/peopledatalabs-openapi.yml#GET /v5/company/enrich

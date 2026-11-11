@@ -1,0 +1,28 @@
+provider: leadiq
+apis_io: https://apis.io/providers/leadiq/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - prospects
+    properties:
+      name: name
+      company_name: company
+      first_name: firstName
+      last_name: lastName
+      location: location
+      job_title: title
+      linkedin_url: linkedinUrl
+      company_domain: companyDomain
+      email:
+      - workEmail
+      - personalEmails
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/leadiq-prospector-api-openapi.json#GET /v1/lists/{listId}/prospects
+    - openapi/_original/leadiq-prospector-api-openapi.json#GET /v1/prospects
+    - openapi/_original/leadiq-prospector-api-openapi.json#GET /v1/prospects/{prospectId}
+    - openapi/_original/leadiq-prospector-api-openapi.json#POST /v1/lists/{listId}/prospects
+    - openapi/_original/leadiq-prospector-api-openapi.json#POST /v1/lists/{listId}/prospects/batch

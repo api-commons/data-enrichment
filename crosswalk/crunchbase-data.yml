@@ -1,0 +1,28 @@
+provider: crunchbase-data
+apis_io: https://apis.io/providers/crunchbase-data/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - people
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/crunchbase-data-advanced-financials-openapi.yml#GET /data/entities/people/{entity_id}
+    - openapi/_original/crunchbase-data-advanced-financials-openapi.yml#POST /data/searches/people
+    - openapi/_original/crunchbase-data-core-financials-openapi.yml#GET /data/entities/people/{entity_id}
+    - openapi/_original/crunchbase-data-core-financials-openapi.yml#POST /data/searches/people
+    - openapi/_original/crunchbase-data-firmographic-openapi.yml#GET /data/entities/people/{entity_id}
+  company_profile:
+    path_segment:
+    - organizations
+    properties:
+      limit: limit
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/crunchbase-data-advanced-financials-openapi.yml#GET /data/entities/organizations/{entity_id}
+    - openapi/_original/crunchbase-data-advanced-financials-openapi.yml#POST /data/searches/organizations
+    - openapi/_original/crunchbase-data-core-financials-openapi.yml#GET /data/entities/organizations/{entity_id}
+    - openapi/_original/crunchbase-data-core-financials-openapi.yml#POST /data/searches/organizations
+    - openapi/_original/crunchbase-data-firmographic-openapi.yml#GET /data/entities/organizations/{entity_id}

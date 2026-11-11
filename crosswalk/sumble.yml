@@ -1,0 +1,25 @@
+provider: sumble
+apis_io: https://apis.io/providers/sumble/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - people
+    properties:
+      status: status
+      id: id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/sumble-openapi-original.json#POST /v9/contact-lists/{list_id}/people
+    - openapi/_original/sumble-openapi-original.json#POST /v9/people
+  company_profile:
+    path_segment:
+    - organizations
+    properties:
+      id: id
+      limit: limit
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/sumble-openapi-original.json#POST /v9/organization-lists/{list_id}/organizations
+    - openapi/_original/sumble-openapi-original.json#POST /v9/organizations

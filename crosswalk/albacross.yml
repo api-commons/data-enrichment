@@ -1,0 +1,12 @@
+provider: albacross
+apis_io: https://apis.io/providers/albacross/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  company_profile:
+    path_segment:
+    - company
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/albacross-openapi.yml#GET /company/{ip}

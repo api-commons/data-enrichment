@@ -1,0 +1,259 @@
+context: data-enrichment
+generated: '2026-11-11'
+adopters:
+- provider: agentum-lat
+  apis_io: https://apis.io/providers/agentum-lat/
+  crosswalk: crosswalk/agentum-lat.yml
+  concepts:
+  - company_profile
+- provider: akta-pro
+  apis_io: https://apis.io/providers/akta-pro/
+  crosswalk: crosswalk/akta-pro.yml
+  concepts:
+  - company_profile
+- provider: albacross
+  apis_io: https://apis.io/providers/albacross/
+  crosswalk: crosswalk/albacross.yml
+  concepts:
+  - company_profile
+- provider: apollo-io
+  apis_io: https://apis.io/providers/apollo-io/
+  crosswalk: crosswalk/apollo-io.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: bitvore
+  apis_io: https://apis.io/providers/bitvore/
+  crosswalk: crosswalk/bitvore.yml
+  concepts:
+  - company_profile
+- provider: caplight
+  apis_io: https://apis.io/providers/caplight/
+  crosswalk: crosswalk/caplight.yml
+  concepts:
+  - company_profile
+- provider: cb-insights
+  apis_io: https://apis.io/providers/cb-insights/
+  crosswalk: crosswalk/cb-insights.yml
+  concepts:
+  - company_profile
+- provider: contextdev
+  apis_io: https://apis.io/providers/contextdev/
+  crosswalk: crosswalk/contextdev.yml
+  concepts:
+  - person_profile
+- provider: crunchbase-data
+  apis_io: https://apis.io/providers/crunchbase-data/
+  crosswalk: crosswalk/crunchbase-data.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: customeros
+  apis_io: https://apis.io/providers/customeros/
+  crosswalk: crosswalk/customeros.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: databook
+  apis_io: https://apis.io/providers/databook/
+  crosswalk: crosswalk/databook.yml
+  concepts:
+  - company_profile
+- provider: deeplead
+  apis_io: https://apis.io/providers/deeplead/
+  crosswalk: crosswalk/deeplead.yml
+  concepts:
+  - email_lookup
+- provider: demandbase
+  apis_io: https://apis.io/providers/demandbase/
+  crosswalk: crosswalk/demandbase.yml
+  concepts:
+  - company_profile
+- provider: dotfile
+  apis_io: https://apis.io/providers/dotfile/
+  crosswalk: crosswalk/dotfile.yml
+  concepts:
+  - company_profile
+- provider: enrich-so
+  apis_io: https://apis.io/providers/enrich-so/
+  crosswalk: crosswalk/enrich-so.yml
+  concepts:
+  - email_lookup
+  - person_profile
+- provider: explorium
+  apis_io: https://apis.io/providers/explorium/
+  crosswalk: crosswalk/explorium.yml
+  concepts:
+  - person_profile
+- provider: fullenrich
+  apis_io: https://apis.io/providers/fullenrich/
+  crosswalk: crosswalk/fullenrich.yml
+  concepts:
+  - person_profile
+- provider: gojiberry-ai
+  apis_io: https://apis.io/providers/gojiberry-ai/
+  crosswalk: crosswalk/gojiberry-ai.yml
+  concepts:
+  - company_profile
+- provider: harmonic-ai
+  apis_io: https://apis.io/providers/harmonic-ai/
+  crosswalk: crosswalk/harmonic-ai.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: hunter
+  apis_io: https://apis.io/providers/hunter/
+  crosswalk: crosswalk/hunter.yml
+  concepts:
+  - company_profile
+  - email_lookup
+  - person_profile
+- provider: hunter-io
+  apis_io: https://apis.io/providers/hunter-io/
+  crosswalk: crosswalk/hunter-io.yml
+  concepts:
+  - email_lookup
+- provider: instantly-ai
+  apis_io: https://apis.io/providers/instantly-ai/
+  crosswalk: crosswalk/instantly-ai.yml
+  concepts:
+  - email_lookup
+- provider: leadiq
+  apis_io: https://apis.io/providers/leadiq/
+  crosswalk: crosswalk/leadiq.yml
+  concepts:
+  - person_profile
+- provider: lemlist
+  apis_io: https://apis.io/providers/lemlist/
+  crosswalk: crosswalk/lemlist.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: leo
+  apis_io: https://apis.io/providers/leo/
+  crosswalk: crosswalk/leo.yml
+  concepts:
+  - person_profile
+- provider: lusha
+  apis_io: https://apis.io/providers/lusha/
+  crosswalk: crosswalk/lusha.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: madkudu
+  apis_io: https://apis.io/providers/madkudu/
+  crosswalk: crosswalk/madkudu.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: mattermark
+  apis_io: https://apis.io/providers/mattermark/
+  crosswalk: crosswalk/mattermark.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: ocean-io
+  apis_io: https://apis.io/providers/ocean-io/
+  crosswalk: crosswalk/ocean-io.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: openmercantil
+  apis_io: https://apis.io/providers/openmercantil/
+  crosswalk: crosswalk/openmercantil.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: orthogonal
+  apis_io: https://apis.io/providers/orthogonal/
+  crosswalk: crosswalk/orthogonal.yml
+  concepts:
+  - company_profile
+  - email_lookup
+  - person_profile
+- provider: peopledatalabs
+  apis_io: https://apis.io/providers/peopledatalabs/
+  crosswalk: crosswalk/peopledatalabs.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: ploid
+  apis_io: https://apis.io/providers/ploid/
+  crosswalk: crosswalk/ploid.yml
+  concepts:
+  - person_profile
+- provider: podium
+  apis_io: https://apis.io/providers/podium/
+  crosswalk: crosswalk/podium.yml
+  concepts:
+  - company_profile
+- provider: qualified-com
+  apis_io: https://apis.io/providers/qualified-com/
+  crosswalk: crosswalk/qualified-com.yml
+  concepts:
+  - company_profile
+- provider: revenuebase
+  apis_io: https://apis.io/providers/revenuebase/
+  crosswalk: crosswalk/revenuebase.yml
+  concepts:
+  - email_lookup
+- provider: salesflare
+  apis_io: https://apis.io/providers/salesflare/
+  crosswalk: crosswalk/salesflare.yml
+  concepts:
+  - person_profile
+- provider: seamless-ai
+  apis_io: https://apis.io/providers/seamless-ai/
+  crosswalk: crosswalk/seamless-ai.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: sendpulse
+  apis_io: https://apis.io/providers/sendpulse/
+  crosswalk: crosswalk/sendpulse.yml
+  concepts:
+  - company_profile
+- provider: serbia-company-data
+  apis_io: https://apis.io/providers/serbia-company-data/
+  crosswalk: crosswalk/serbia-company-data.yml
+  concepts:
+  - company_profile
+- provider: sumble
+  apis_io: https://apis.io/providers/sumble/
+  crosswalk: crosswalk/sumble.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: supaglue
+  apis_io: https://apis.io/providers/supaglue/
+  crosswalk: crosswalk/supaglue.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: surfe
+  apis_io: https://apis.io/providers/surfe/
+  crosswalk: crosswalk/surfe.yml
+  concepts:
+  - company_profile
+  - person_profile
+- provider: the-hog
+  apis_io: https://apis.io/providers/the-hog/
+  crosswalk: crosswalk/the-hog.yml
+  concepts:
+  - company_profile
+- provider: thecompaniesapi
+  apis_io: https://apis.io/providers/thecompaniesapi/
+  crosswalk: crosswalk/thecompaniesapi.yml
+  concepts:
+  - company_profile
+- provider: topograph
+  apis_io: https://apis.io/providers/topograph/
+  crosswalk: crosswalk/topograph.yml
+  concepts:
+  - company_profile
+- provider: zoominfo
+  apis_io: https://apis.io/providers/zoominfo/
+  crosswalk: crosswalk/zoominfo.yml
+  concepts:
+  - company_profile
+  - person_profile

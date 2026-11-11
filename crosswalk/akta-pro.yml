@@ -1,0 +1,14 @@
+provider: akta-pro
+apis_io: https://apis.io/providers/akta-pro/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  company_profile:
+    path_segment:
+    - companies
+    properties:
+      limit: limit
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/akta-pro-docs-openapi.json#POST /v1/list/generate/companies/
+    - openapi/_original/akta-pro-openapi.yml#POST /v1/list/generate/companies/

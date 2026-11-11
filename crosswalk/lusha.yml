@@ -1,0 +1,59 @@
+provider: lusha
+apis_io: https://apis.io/providers/lusha/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - person
+    - enrich
+    properties:
+      name:
+      - fullName
+      - name
+      company_name:
+      - companyName
+      - company
+      first_name: firstName
+      last_name: lastName
+      location: location
+      job_title: jobTitle
+      linkedin_url: linkedinUrl
+      email:
+      - emails
+      - email
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/lusha-v2-openapi.yaml#GET /v2/person
+    - openapi/_original/lusha-v2-openapi.yaml#POST /prospecting/contact/enrich
+    - openapi/_original/lusha-v2-openapi.yaml#POST /v2/person
+  company_profile:
+    path_segment:
+    - enrich
+    - company
+    - companies
+    properties:
+      name: name
+      domain:
+      - domain
+      - website
+      description: description
+      id: id
+      employee_count:
+      - employeeCount
+      - employees
+      industry: industry
+      country: country
+      city: city
+      limit: limit
+      linkedin_url: linkedinUrl
+      location: location
+      revenue: revenueRange
+      state: state
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/lusha-openapi.yml#POST /v3/companies/enrich
+    - openapi/_original/lusha-v2-openapi.yaml#GET /v2/company
+    - openapi/_original/lusha-v2-openapi.yaml#POST /api/signals/companies
+    - openapi/_original/lusha-v2-openapi.yaml#POST /prospecting/company/enrich
+    - openapi/_original/lusha-v2-openapi.yaml#POST /v2/company

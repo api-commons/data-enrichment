@@ -1,0 +1,39 @@
+provider: zoominfo
+apis_io: https://apis.io/providers/zoominfo/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - enrich
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/zoominfo-openapi.yml#GET /lookup/inputfields/contact/enrich
+    - openapi/_original/zoominfo-openapi.yml#GET /lookup/outputfields/contact/enrich
+  company_profile:
+    path_segment:
+    - enrich
+    - company
+    properties:
+      name: name
+      domain: website
+      description: description
+      id: id
+      employee_count:
+      - employeeCount
+      - employeeRange
+      industry: industries
+      country: country
+      city: city
+      revenue:
+      - revenue
+      - revenueRange
+      state: state
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/zoominfo-gtm-data-v1-openapi.json#POST /data/v1/companies/corporate-hierarchy/enrich
+    - openapi/_original/zoominfo-gtm-data-v1-openapi.json#POST /data/v1/companies/enrich
+    - openapi/_original/zoominfo-gtm-data-v1-openapi.json#POST /data/v1/companies/hashtags/enrich
+    - openapi/_original/zoominfo-gtm-data-v1-openapi.json#POST /data/v1/companies/org-chart/enrich
+    - openapi/_original/zoominfo-gtm-data-v1-openapi.json#POST /data/v1/companies/technologies/enrich

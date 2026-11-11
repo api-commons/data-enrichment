@@ -1,0 +1,3845 @@
+{
+ "cohort_size": 137,
+ "unreadable": [],
+ "concepts": {
+  "person_profile": {
+   "apollo-api-documentation": {
+    "segments": [
+     "people"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/apollo-api-documentation-apollo-rest-api-openapi.json#GET /people/{id}"
+    ]
+   },
+   "apollo-io": {
+    "segments": [
+     "people"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/apollo-io-apollo-rest-api-openapi.json#GET /people/{id}"
+    ]
+   },
+   "contextdev": {
+    "segments": [
+     "enrich"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "partial": "boolean",
+     "match": null,
+     "key_metadata": "object",
+     "request_id": "string",
+     "social_urls": "array",
+     "name": "object",
+     "email": "string",
+     "company": "object",
+     "education": "array",
+     "location": "object",
+     "timeoutOpts": "object",
+     "zdr": "string",
+     "tags": "array"
+    },
+    "evidence": [
+     "openapi/_original/contextdev-openapi.json#POST /people/enrich"
+    ]
+   },
+   "crunchbase-data": {
+    "segments": [
+     "people"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "cards": "object",
+     "properties": "object",
+     "count": "integer",
+     "entities": "array",
+     "after_id": "string",
+     "before_id": "string",
+     "field_ids": "array",
+     "limit": "integer",
+     "order": "array",
+     "query": "array",
+     "field_id": "string",
+     "operator_id": "string",
+     "type": "string",
+     "values": "array"
+    },
+    "evidence": [
+     "openapi/_original/crunchbase-data-advanced-financials-openapi.yml#GET /data/entities/people/{entity_id}",
+     "openapi/_original/crunchbase-data-advanced-financials-openapi.yml#POST /data/searches/people",
+     "openapi/_original/crunchbase-data-core-financials-openapi.yml#GET /data/entities/people/{entity_id}",
+     "openapi/_original/crunchbase-data-core-financials-openapi.yml#POST /data/searches/people",
+     "openapi/_original/crunchbase-data-firmographic-openapi.yml#GET /data/entities/people/{entity_id}",
+     "openapi/_original/crunchbase-data-firmographic-openapi.yml#POST /data/searches/people",
+     "openapi/_original/crunchbase-data-insights-openapi.yml#GET /data/entities/people/{entity_id}",
+     "openapi/_original/crunchbase-data-insights-openapi.yml#POST /data/searches/people",
+     "openapi/_original/crunchbase-data-predictions-insights-openapi.yml#GET /data/entities/people/{entity_id}",
+     "openapi/_original/crunchbase-data-predictions-insights-openapi.yml#POST /data/searches/people",
+     "openapi/_original/crunchbase-data-predictions-openapi.yml#GET /data/entities/people/{entity_id}",
+     "openapi/_original/crunchbase-data-predictions-openapi.yml#POST /data/searches/people"
+    ]
+   },
+   "customeros": {
+    "segments": [
+     "person"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "message": "string",
+     "requestId": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/customeros-enrich-openapi.yml#GET /enrich/v1/person",
+     "openapi/_original/customeros-swagger.json#GET /enrich/v1/person"
+    ]
+   },
+   "enrich-so": {
+    "segments": [
+     "person"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "request_id": "string",
+     "status": "string",
+     "message": "string",
+     "total_credits": "number",
+     "credits_used": "number",
+     "credits_remaining": "number"
+    },
+    "evidence": [
+     "openapi/_original/enrich-so-legacy-api-openapi.json#GET /v2/api/person"
+    ]
+   },
+   "explorium": {
+    "segments": [
+     "prospects"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "prospect_id": "string",
+     "professional_email_hashed": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "full_name": "string",
+     "country_name": "string",
+     "region_name": "string",
+     "city": "string",
+     "linkedin": "string",
+     "experience": "array",
+     "skills": "array",
+     "interests": "array",
+     "company_name": "string",
+     "company_website": "string",
+     "company_linkedin": "string",
+     "job_department": "string",
+     "job_department_array": "array",
+     "job_department_main": "string",
+     "job_seniority_level": "array",
+     "job_level_array": "array",
+     "job_level_main": "string",
+     "job_title": "string",
+     "business_id": "string",
+     "linkedin_url_array": "array",
+     "request_context": "object",
+     "mode": null,
+     "size": "integer",
+     "page_size": "integer",
+     "page": "integer",
+     "exclude": "array",
+     "filters": null,
+     "next_cursor": "string"
+    },
+    "evidence": [
+     "openapi/_original/explorium-agentsource-openapi.json#POST /v1/prospects",
+     "openapi/_original/explorium-agentsource-openapi.json#POST /v2/prospects"
+    ]
+   },
+   "fullenrich": {
+    "segments": [
+     "enrich"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "enrichment_id": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "domain": "string",
+     "company_name": "string",
+     "linkedin_url": "string",
+     "enrich_fields": "array",
+     "custom": "object"
+    },
+    "evidence": [
+     "openapi/_original/fullenrich-openapi.yml#POST /contact/enrich/bulk"
+    ]
+   },
+   "harmonic-ai": {
+    "segments": [
+     "people",
+     "persons"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "full_name": null,
+     "first_name": null,
+     "last_name": null,
+     "profile_picture_url": null,
+     "contact": null,
+     "location": null,
+     "education": "array",
+     "socials": null,
+     "experience": "array",
+     "unstandardized_experience__internal": "array",
+     "websites": "array",
+     "linkedin_connections": null,
+     "usurping_person_id": null,
+     "linkedin_headline": null,
+     "linkedin_profile_visibility_type": null,
+     "last_checked_at": null,
+     "languages": "array",
+     "requested_entity_urn": null,
+     "entity_urn": "string",
+     "id": null,
+     "highlights": "array",
+     "notable_followers": "array",
+     "num_notable_followers": null,
+     "updated_at": null,
+     "awards__beta": "array",
+     "recommendations__beta": "array",
+     "current_company_urns": "array",
+     "last_refreshed_at": null,
+     "investor_urn": null,
+     "is_redacted": null,
+     "enrichment_urn": null,
+     "merged_person_urn": null,
+     "name": "string",
+     "shared_with_team": "boolean",
+     "creator": null,
+     "owner": null,
+     "people": null,
+     "people_count": null,
+     "user_watchlist_type": "string",
+     "custom_fields": "array",
+     "named_views": "array",
+     "named_views_order": "array",
+     "created_at": "string",
+     "page_info": null,
+     "urn": null,
+     "metadata": null
+    },
+    "evidence": [
+     "openapi/_original/harmonic-ai-openapi.json#DELETE /watchlists/people/{id_or_urn}",
+     "openapi/_original/harmonic-ai-openapi.json#GET /persons",
+     "openapi/_original/harmonic-ai-openapi.json#GET /persons/{id_or_urn}",
+     "openapi/_original/harmonic-ai-openapi.json#GET /watchlists/people",
+     "openapi/_original/harmonic-ai-openapi.json#GET /watchlists/people/{id_or_urn}",
+     "openapi/_original/harmonic-ai-openapi.json#POST /persons",
+     "openapi/_original/harmonic-ai-openapi.json#POST /watchlists/people",
+     "openapi/_original/harmonic-ai-openapi.json#PUT /watchlists/people/{id_or_urn}"
+    ]
+   },
+   "hunter": {
+    "segments": [
+     "people"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/hunter-openapi.json#GET /discover/people",
+     "openapi/_original/hunter-openapi.json#POST /discover/people"
+    ]
+   },
+   "leadiq": {
+    "segments": [
+     "prospects"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "personId": "string",
+     "linkedinId": "string",
+     "linkedinUrl": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "name": "string",
+     "picture": "string",
+     "title": "string",
+     "seniority": "string",
+     "function": "string",
+     "workEmail": "string",
+     "emailStatus": "string",
+     "personalEmails": "array",
+     "mobilePhones": "array",
+     "location": "object",
+     "company": "object",
+     "listIds": "array",
+     "notes": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "phone": "string",
+     "companyDomain": "string",
+     "companyIndustry": "string",
+     "companyId": "string",
+     "succeeded": "array",
+     "failed": "array"
+    },
+    "evidence": [
+     "openapi/_original/leadiq-prospector-api-openapi.json#GET /v1/lists/{listId}/prospects",
+     "openapi/_original/leadiq-prospector-api-openapi.json#GET /v1/prospects",
+     "openapi/_original/leadiq-prospector-api-openapi.json#GET /v1/prospects/{prospectId}",
+     "openapi/_original/leadiq-prospector-api-openapi.json#POST /v1/lists/{listId}/prospects",
+     "openapi/_original/leadiq-prospector-api-openapi.json#POST /v1/lists/{listId}/prospects/batch",
+     "openapi/_original/leadiq-prospector-api-openapi.json#POST /v1/lists/{listId}/prospects/{prospectId}",
+     "openapi/_original/leadiq-prospector-api-openapi.json#POST /v1/prospects",
+     "openapi/_original/leadiq-prospector-api-openapi.yml#GET /v1/lists/{listId}/prospects",
+     "openapi/_original/leadiq-prospector-api-openapi.yml#GET /v1/prospects",
+     "openapi/_original/leadiq-prospector-api-openapi.yml#GET /v1/prospects/{prospectId}",
+     "openapi/_original/leadiq-prospector-api-openapi.yml#POST /v1/lists/{listId}/prospects",
+     "openapi/_original/leadiq-prospector-api-openapi.yml#POST /v1/lists/{listId}/prospects/batch"
+    ]
+   },
+   "lemlist": {
+    "segments": [
+     "people"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "filterId": "string",
+     "in": "array",
+     "out": "array",
+     "results": "array",
+     "total": "integer",
+     "took": "integer",
+     "page": "integer",
+     "size": "integer",
+     "search": "string",
+     "limitation": "integer",
+     "team": "string"
+    },
+    "evidence": [
+     "openapi/_original/lemlist-openapi-v1-legacy.json#GET /schema/people",
+     "openapi/_original/lemlist-openapi-v1-legacy.json#POST /database/people",
+     "openapi/_original/lemlist-openapi-v2.json#POST /database/people",
+     "openapi/_original/lemlist-openapi.yml#POST /database/people"
+    ]
+   },
+   "leo": {
+    "segments": [
+     "prospects"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "prospectId": "integer",
+     "standardCompanyName": "string",
+     "state": "string",
+     "city": "string",
+     "zipCode": "string",
+     "address": "string",
+     "primaryVertical": "string",
+     "naicsCode": "string",
+     "naicsList": "string",
+     "ntee": "string",
+     "salesVolumeRange": "string",
+     "hqPhone": "string",
+     "ein": "string",
+     "employeeRange": "string",
+     "websiteUrl": "string",
+     "linkedinUrl": "string",
+     "insurance": "object",
+     "irs990": null,
+     "xDatePredictions": null,
+     "benefitsRedFlags": null,
+     "dotRedFlags": null,
+     "contacts": "object"
+    },
+    "evidence": [
+     "openapi/_original/leo-openapi.json#GET /v1/prospects/{prospectId}"
+    ]
+   },
+   "lusha": {
+    "segments": [
+     "person",
+     "enrich"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "companyId": "number",
+     "firstName": "string",
+     "lastName": "string",
+     "fullName": "string",
+     "emails": "array",
+     "emailAddresses": "array",
+     "phones": "string",
+     "phoneNumbers": "array",
+     "personId": "number",
+     "location": "object",
+     "jobTitle": "object",
+     "socialLinks": "object",
+     "jobStartDate": "string",
+     "previousJob": "object",
+     "contactTags": "array",
+     "updateDate": "string",
+     "linkedinFollowersCount": "integer",
+     "linkedinConnectionsCount": "integer",
+     "linkedinCertifications": "array",
+     "linkedinCourses": "array",
+     "linkedinAwards": "array",
+     "linkedinSkills": "array",
+     "name": "string",
+     "description": "string",
+     "domains": "object",
+     "homepageUrl": "string",
+     "fqdn": "string",
+     "companySize": "array",
+     "revenueRange": "array",
+     "industryPrimaryGroup": "string",
+     "logoUrl": "string",
+     "social": "object",
+     "specialities": "array",
+     "technologies": "array",
+     "funding": "object",
+     "industry": "object",
+     "intent": "object",
+     "industryPrimaryGroupDetails": "object",
+     "contacts": "object",
+     "companies": "object",
+     "contactId": "string",
+     "linkedinUrl": "string",
+     "email": "string",
+     "isShown": "boolean",
+     "companyName": "string",
+     "departments": "array",
+     "seniority": "array",
+     "company": "object",
+     "requestId": "string",
+     "contactIds": "array",
+     "revealEmails": "boolean",
+     "revealPhones": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/lusha-v2-openapi.yaml#GET /v2/person",
+     "openapi/_original/lusha-v2-openapi.yaml#POST /prospecting/contact/enrich",
+     "openapi/_original/lusha-v2-openapi.yaml#POST /v2/person"
+    ]
+   },
+   "madkudu": {
+    "segments": [
+     "persons"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "object_type": null,
+     "email": "string",
+     "properties": null,
+     "company": null,
+     "person": null,
+     "mk_id": "string",
+     "source_system": null,
+     "name": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "title": "string",
+     "persona": "string",
+     "avatar": "string",
+     "socials": null,
+     "location": null,
+     "has_left_company": "boolean",
+     "activities": null,
+     "scores": null,
+     "aggregations": "object",
+     "limit": "integer",
+     "cursor": "integer",
+     "search": "string",
+     "filters": "array",
+     "filterLogic": null,
+     "sort": "array"
+    },
+    "evidence": [
+     "openapi/_original/madkudu-legacy-api-openapi.yml#GET /v1/persons",
+     "openapi/_original/madkudu-legacy-api-openapi.yml#POST /v1/persons",
+     "openapi/_original/madkudu-madapi-openapi.yml#GET /lookup/persons",
+     "openapi/_original/madkudu-madapi-openapi.yml#GET /persons/{mk_id}",
+     "openapi/_original/madkudu-madapi-openapi.yml#POST /search/persons"
+    ]
+   },
+   "mattermark": {
+    "segments": [
+     "people"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string",
+     "title": "string",
+     "path": "string"
+    },
+    "evidence": [
+     "openapi/_original/mattermark-rest-api-openapi.yml#GET /companies/{id}/people",
+     "openapi/_original/mattermark-swagger.yaml#GET /companies/{id}/people"
+    ]
+   },
+   "ocean-io": {
+    "segments": [
+     "people",
+     "person"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "domain": "string",
+     "name": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "country": "string",
+     "state": "string",
+     "location": "string",
+     "linkedinUrl": "string",
+     "seniorities": "array",
+     "departments": "array",
+     "photo": "string",
+     "jobTitle": "string",
+     "jobTitleEnglish": "string",
+     "currentJobDescription": "string",
+     "experiences": "array",
+     "summary": "string",
+     "skills": "array",
+     "phone": "object",
+     "email": "object",
+     "inferredEmails": "array",
+     "updatedAt": "string",
+     "connectionsCount": "integer",
+     "followersCount": "integer",
+     "headline": "string",
+     "creditsUsed": "number",
+     "person": "object",
+     "company": "object",
+     "revealEmails": "object",
+     "revealPhones": "object",
+     "size": "integer",
+     "from": "integer",
+     "searchAfter": "string",
+     "peopleFilters": "object",
+     "companiesFilters": "object",
+     "onePersonPerDomain": "boolean",
+     "peoplePerCompany": "integer",
+     "people": "array",
+     "detail": "string",
+     "lookalikePeopleStatuses": "object",
+     "total": "integer",
+     "redirectMap": "object",
+     "includeDomainsStatuses": "object",
+     "jobTitleThreshold": "number",
+     "fields": "array",
+     "relevance": "string",
+     "linkedinHandles": "array",
+     "oceanIds": "array",
+     "status": "string",
+     "peopleDataMapping": "object",
+     "webhookUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/ocean-io-api-openapi.yml#POST /v2/enrich/people",
+     "openapi/_original/ocean-io-api-openapi.yml#POST /v2/enrich/person",
+     "openapi/_original/ocean-io-api-openapi.yml#POST /v2/lookup/people",
+     "openapi/_original/ocean-io-api-openapi.yml#POST /v2/search/people",
+     "openapi/_original/ocean-io-api-openapi.yml#POST /v3/search/people",
+     "openapi/_original/ocean-io-openapi.json#POST /v2/enrich/people",
+     "openapi/_original/ocean-io-openapi.json#POST /v2/enrich/person",
+     "openapi/_original/ocean-io-openapi.json#POST /v2/lookup/people",
+     "openapi/_original/ocean-io-openapi.json#POST /v2/search/people",
+     "openapi/_original/ocean-io-openapi.json#POST /v3/search/people"
+    ]
+   },
+   "openmercantil": {
+    "segments": [
+     "person"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "slug": "string",
+     "name": "string",
+     "first_seen": [
+      "string",
+      "null"
+     ],
+     "last_seen": [
+      "string",
+      "null"
+     ],
+     "companies_count": "integer",
+     "active_positions": "array",
+     "inactive_positions": "array",
+     "subject_type": "string",
+     "identity_resolution": "string",
+     "positions_semantics": "string",
+     "_legal_notice": "string",
+     "_correction_channel": "string",
+     "schema_version": "string",
+     "status": "string",
+     "projection": "object",
+     "_source_catalog": "object",
+     "_data_sources_used": "array",
+     "_attributions": "object",
+     "person_slug": "string",
+     "role": "string",
+     "appointed": "string",
+     "ceased": "string"
+    },
+    "evidence": [
+     "openapi/_original/openmercantil-openapi-1.9.3.json#GET /api/v1/person/{slug}",
+     "openapi/_original/openmercantil-openapi.yml#GET /api/v1/person/{slug}"
+    ]
+   },
+   "orthogonal": {
+    "segments": [
+     "enrich",
+     "people",
+     "person"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /aviato/person/enrich",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /captaindata/people/enrich",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /company-enrich/people",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /crustdata/screener/person/enrich",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /peopledatalabs/v5/person/enrich",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /signalbase/people",
+     "openapi/_original/orthogonal-marketplace-openapi.json#POST /contactout/v1/people/enrich",
+     "openapi/_original/orthogonal-marketplace-openapi.json#POST /fiber/v1/kitchen-sink/person",
+     "openapi/_original/orthogonal-marketplace-openapi.json#POST /fullenrich/contact/enrich/bulk",
+     "openapi/_original/orthogonal-marketplace-openapi.json#POST /ocean-io/v2/enrich/person",
+     "openapi/_original/orthogonal-marketplace-openapi.json#POST /ocean-io/v2/lookup/people",
+     "openapi/_original/orthogonal-marketplace-openapi.json#POST /ocean-io/v3/search/people"
+    ]
+   },
+   "peopledatalabs": {
+    "segments": [
+     "enrich"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "full_name": "string",
+     "first_name": "string",
+     "middle_initial": "string",
+     "middle_name": "string",
+     "last_initial": "string",
+     "last_name": "string",
+     "sex": "string",
+     "birth_year": "string",
+     "birth_date": "string",
+     "linkedin_url": "string",
+     "linkedin_username": "string",
+     "linkedin_id": "string",
+     "facebook_url": "string",
+     "facebook_username": "string",
+     "facebook_id": "string",
+     "twitter_url": "string",
+     "twitter_username": "string",
+     "github_url": "string",
+     "github_username": "string",
+     "work_email": "string",
+     "personal_emails": "array",
+     "mobile_phone": "string",
+     "industry": "string",
+     "job_title": "string",
+     "job_title_role": "string",
+     "job_title_sub_role": "string",
+     "job_title_levels": "string",
+     "job_company_id": "string",
+     "job_company_name": "string",
+     "job_company_website": "string",
+     "job_company_size": "string",
+     "job_company_founded": "string",
+     "job_company_industry": "string",
+     "job_company_linkedin_url": "string",
+     "job_company_linkedin_id": "string",
+     "job_company_facebook_url": "string",
+     "job_company_twitter_url": "string",
+     "job_company_location_name": "string",
+     "job_company_location_locality": "string",
+     "job_company_location_metro": "string",
+     "job_company_location_region": "string",
+     "job_company_location_geo": "string",
+     "job_company_location_street_address": "string",
+     "job_company_location_address_line_2": "string",
+     "job_company_location_postal_code": "string",
+     "job_company_location_country": "string",
+     "job_company_location_continent": "string",
+     "job_start_date": "string",
+     "location_name": "string",
+     "location_locality": "string",
+     "location_metro": "string",
+     "location_region": "string",
+     "location_country": "string",
+     "location_continent": "string",
+     "location_street_address": "string",
+     "location_address_line_2": "string",
+     "location_postal_code": "string",
+     "location_geo": "string",
+     "location_last_updated": "string",
+     "phone_numbers": "array",
+     "emails": "array",
+     "interests": "array",
+     "skills": "array",
+     "location_names": "array",
+     "regions": "array",
+     "countries": "array",
+     "street_address": "array",
+     "experience": "array",
+     "education": "array",
+     "profiles": "array",
+     "operation_id": "string",
+     "job_last_updated": "string",
+     "version_status": null
+    },
+    "evidence": [
+     "openapi/_original/peopledatalabs-docs-openapi.json#GET /v5/person/enrich",
+     "openapi/_original/peopledatalabs-openapi.yml#GET /v5/person/enrich"
+    ]
+   },
+   "ploid": {
+    "segments": [
+     "person"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "person_id": "string",
+     "summary": "string",
+     "age_range": null,
+     "identity": "object",
+     "source_links": "array",
+     "professional": "object",
+     "presence": "object",
+     "signals": "object",
+     "provenance": "object",
+     "identifier": null
+    },
+    "evidence": [
+     "openapi/_original/ploid-openapi.json#POST /v1/person",
+     "openapi/_original/ploid-openapi.yml#POST /v1/person"
+    ]
+   },
+   "salesflare": {
+    "segments": [
+     "persons"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/salesflare-api-openapi.yml#GET /persons",
+     "openapi/_original/salesflare-openapi.json#GET /persons"
+    ]
+   },
+   "seamless-ai": {
+    "segments": [
+     "contacts"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "searchResultId": "string",
+     "name": "string",
+     "company": "string",
+     "title": "string",
+     "department": "string",
+     "seniority": "string",
+     "domain": "string",
+     "city": "string",
+     "state": "string",
+     "country": "string",
+     "companyCity": "string",
+     "companyState": "string",
+     "companyCountry": "string",
+     "liUrl": "string",
+     "companyLIProfileUrl": "string",
+     "sicCode": "string",
+     "industries": "array",
+     "startedAtCurrentCompany": "string",
+     "titleStartedAt": "string",
+     "timeAtRole": "string",
+     "timeAtCompany": "string",
+     "companyFoundedOn": "string",
+     "lastModifiedAt": "string",
+     "companyRevenue": "string",
+     "employeeSizeRange": "string",
+     "timezone": "string",
+     "firstName": "string",
+     "middleName": "string",
+     "lastName": "string",
+     "companyDomainAlias": "string",
+     "contactLIRecruiterUrl": "string",
+     "contactLISalesNavUrl": "string",
+     "contactXUrl": "string",
+     "companyGRURL": "string",
+     "contactCurrentCompanyYears": "string",
+     "contactFBUrl": "string",
+     "contactGURL": "string",
+     "companyXUrl": "string",
+     "companyFBUrl": "string",
+     "newsAndEvents": "array",
+     "companyFundingTotal": "string",
+     "companyLatestFundingDate": "string",
+     "companyLatestFundingClassifications": "array",
+     "jobChangeAlert": "string",
+     "formerCompany": "string",
+     "formerTitle": "string",
+     "formerStartedAt": "string",
+     "formerEndedAt": "string",
+     "companyType": "string",
+     "stockTicker": "string",
+     "nextToken": "string",
+     "limit": "integer",
+     "companyName": "array",
+     "companyNameSearchType": "string",
+     "companyDomain": "array",
+     "contactState": "array",
+     "contactCountry": "array",
+     "contactZipCode": "array",
+     "locationType": "string",
+     "industry": "array",
+     "fullName": "array",
+     "contactKeyword": "array",
+     "jobTitle": "array",
+     "companySize": "array",
+     "technologies": "array",
+     "technologiesIsOr": "boolean",
+     "jobChanges": "object",
+     "pastCompany": "object",
+     "lastModifiedAfter": "string",
+     "lastModifiedBefore": "string",
+     "newsTypes": "array",
+     "newsTypeDates": "array",
+     "companyLatestFundingDates": "array",
+     "companyLatestFundingTotals": "array"
+    },
+    "evidence": [
+     "openapi/_original/seamless-ai-public-api-openapi-original.json#POST /search/contacts"
+    ]
+   },
+   "sumble": {
+    "segments": [
+     "people"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "added": "integer",
+     "already_on_list": "integer",
+     "people_ids": "array",
+     "id": "string",
+     "credits_used": "integer",
+     "credits_remaining": "integer",
+     "request_id": null,
+     "status": null,
+     "people": null,
+     "matched_count": null,
+     "total": null,
+     "source_data_url": null,
+     "filter": null,
+     "select": "object",
+     "limit": "integer",
+     "offset": "integer",
+     "order_by_column": null,
+     "order_by_direction": null
+    },
+    "evidence": [
+     "openapi/_original/sumble-openapi-original.json#POST /v9/contact-lists/{list_id}/people",
+     "openapi/_original/sumble-openapi-original.json#POST /v9/people"
+    ]
+   },
+   "supaglue": {
+    "segments": [
+     "persons"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string",
+     "industry": "string",
+     "annual_revenue": "number",
+     "domain": "string",
+     "employee_count": "number"
+    },
+    "evidence": [
+     "openapi/_original/supaglue-enrichment-api-openapi.yml#GET /persons"
+    ]
+   },
+   "surfe": {
+    "segments": [
+     "enrich"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "linkedinUrl": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "companyName": "string",
+     "companyDomain": "string",
+     "externalID": "string",
+     "jobTitle": "string",
+     "seniorities": "array",
+     "departments": "array",
+     "country": "string",
+     "linkedInUrl": "string",
+     "emails": "array",
+     "mobilePhones": "array",
+     "jobHistory": "array",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/surfe-openapi.yml#GET /people/enrich/{id}",
+     "openapi/_original/surfe-openapi.yml#POST /people/enrich"
+    ]
+   },
+   "zoominfo": {
+    "segments": [
+     "enrich"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "fieldName": "string",
+     "fieldType": "string",
+     "description": "string",
+     "accessGranted": "string"
+    },
+    "evidence": [
+     "openapi/_original/zoominfo-openapi.yml#GET /lookup/inputfields/contact/enrich",
+     "openapi/_original/zoominfo-openapi.yml#GET /lookup/outputfields/contact/enrich"
+    ]
+   }
+  },
+  "company_profile": {
+   "agentum-lat": {
+    "segments": [
+     "company"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "razaoSocial": "string",
+     "nomeFantasia": [
+      "string",
+      "null"
+     ],
+     "situacaoCadastral": "string",
+     "naturezaJuridica": "string",
+     "dataAbertura": "string",
+     "cnaePrincipal": "string",
+     "capitalSocial": [
+      "number",
+      "null"
+     ],
+     "porte": "string",
+     "simplesNacional": [
+      "boolean",
+      "null"
+     ],
+     "endereco": "object",
+     "fonte": "string"
+    },
+    "evidence": [
+     "openapi/_original/agentum-lat-business-openapi.json#GET /company"
+    ]
+   },
+   "akta-pro": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "data": "array",
+     "count": "integer",
+     "total_count": "integer",
+     "credits_consumed": "number",
+     "query": "string",
+     "filters": "object",
+     "sections": "array",
+     "sort_by": "string",
+     "sort_order": "string",
+     "limit": "integer",
+     "offset": "integer"
+    },
+    "evidence": [
+     "openapi/_original/akta-pro-docs-openapi.json#POST /v1/list/generate/companies/",
+     "openapi/_original/akta-pro-openapi.yml#POST /v1/list/generate/companies/"
+    ]
+   },
+   "albacross": {
+    "segments": [
+     "company"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/albacross-openapi.yml#GET /company/{ip}"
+    ]
+   },
+   "apollo-api-documentation": {
+    "segments": [
+     "organizations"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/apollo-api-documentation-apollo-rest-api-openapi.json#GET /organizations/{id}"
+    ]
+   },
+   "apollo-io": {
+    "segments": [
+     "organizations"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/apollo-io-apollo-rest-api-openapi.json#GET /organizations/{id}"
+    ]
+   },
+   "bitvore": {
+    "segments": [
+     "organizations"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "bvId": "string",
+     "channels": "array",
+     "city": "string",
+     "country": "string",
+     "domainName": "string",
+     "factSetId": "string",
+     "isin": "string",
+     "listings": "array",
+     "naicsIndustry": "object",
+     "name": "string",
+     "sicIndustry": "object",
+     "state": "string",
+     "ticker": "string"
+    },
+    "evidence": [
+     "openapi/_original/bitvore-corporate-openapi.yml#GET /v2/corp/organizations/{bvId}",
+     "openapi/_original/bitvore-corporate-swagger.json#GET /v2/corp/organizations/{bvId}"
+    ]
+   },
+   "caplight": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "name": "string",
+     "caplightId": "string",
+     "caplightIds": "object",
+     "pitchbookId": "string",
+     "domain": "string",
+     "status": "string",
+     "caplightPageURL": "string",
+     "hqCountry": "string",
+     "countryOfDomicile": "string",
+     "industry": "string",
+     "legalName": "string",
+     "has409aValuations": "boolean",
+     "coisAvailable": "boolean",
+     "marketPriceEstimate": "object",
+     "id": "string",
+     "description": "string",
+     "shortDescription": "string",
+     "location": "object",
+     "tags": "object"
+    },
+    "evidence": [
+     "openapi/_original/caplight-rest-api-openapi-original.json#GET /v1/companies",
+     "openapi/_original/caplight-rest-api-openapi-original.json#GET /v2/companies",
+     "openapi/_original/caplight-rest-api-openapi-original.json#GET /v2/companies/{companyId}"
+    ]
+   },
+   "cb-insights": {
+    "segments": [
+     "firmographics",
+     "organizations"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "businessModels": "array",
+     "childOrgs": "array",
+     "competitors": "array",
+     "expertCollections": "array",
+     "financials": null,
+     "headcount": null,
+     "identifiers": null,
+     "orgId": "integer",
+     "parentOrgs": "array",
+     "summary": null,
+     "taxonomy": null,
+     "awardsAndSpotlightsIds": "array",
+     "businessModelIds": "array",
+     "ciks": "array",
+     "cityIds": "array",
+     "collectionIds": "array",
+     "continentIds": "array",
+     "countryIds": "array",
+     "cusips": "array",
+     "figis": "array",
+     "fundingInvestorTypeIds": "array",
+     "industryIds": "array",
+     "investorOrgIds": "array",
+     "investorTypeIds": "array",
+     "isins": "array",
+     "keyword": "string",
+     "lastFundingRoundCategoryIds": "array",
+     "lastFundingRoundIds": "array",
+     "leis": "array",
+     "limit": "integer",
+     "marketIds": "array",
+     "marketNames": "array",
+     "maxCurrentHeadcount": "integer",
+     "maxLastFundingDate": "string",
+     "maxTotalFundingInMillions": "number",
+     "maxValuationInMillions": "number",
+     "minCurrentHeadcount": "integer",
+     "minLastFundingDate": "string",
+     "minTotalFundingInMillions": "number",
+     "minValuationInMillions": "number",
+     "nextPageToken": "string",
+     "orgIds": "array",
+     "orgNames": "array",
+     "orgStatusIds": "array",
+     "regionIds": "array",
+     "sectorIds": "array",
+     "sort": "object",
+     "stateProvinceIds": "array",
+     "subindustryIds": "array",
+     "technologyIds": "array",
+     "tickers": "array",
+     "urls": "array",
+     "vcBacked": "boolean",
+     "aliases": "array",
+     "description": "string",
+     "name": "string",
+     "names": "array",
+     "profileUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/cb-insights-api-v2-openapi.json#POST /v2/firmographics",
+     "openapi/_original/cb-insights-api-v2-openapi.json#POST /v2/organizations"
+    ]
+   },
+   "crunchbase-data": {
+    "segments": [
+     "organizations"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "cards": "object",
+     "properties": "object",
+     "count": "integer",
+     "entities": "array",
+     "after_id": "string",
+     "before_id": "string",
+     "field_ids": "array",
+     "limit": "integer",
+     "order": "array",
+     "query": "array",
+     "field_id": "string",
+     "operator_id": "string",
+     "type": "string",
+     "values": "array"
+    },
+    "evidence": [
+     "openapi/_original/crunchbase-data-advanced-financials-openapi.yml#GET /data/entities/organizations/{entity_id}",
+     "openapi/_original/crunchbase-data-advanced-financials-openapi.yml#POST /data/searches/organizations",
+     "openapi/_original/crunchbase-data-core-financials-openapi.yml#GET /data/entities/organizations/{entity_id}",
+     "openapi/_original/crunchbase-data-core-financials-openapi.yml#POST /data/searches/organizations",
+     "openapi/_original/crunchbase-data-firmographic-openapi.yml#GET /data/entities/organizations/{entity_id}",
+     "openapi/_original/crunchbase-data-firmographic-openapi.yml#POST /data/searches/organizations",
+     "openapi/_original/crunchbase-data-insights-openapi.yml#GET /data/entities/organizations/{entity_id}",
+     "openapi/_original/crunchbase-data-insights-openapi.yml#POST /data/searches/organizations",
+     "openapi/_original/crunchbase-data-predictions-insights-openapi.yml#GET /data/entities/organizations/{entity_id}",
+     "openapi/_original/crunchbase-data-predictions-insights-openapi.yml#POST /data/searches/organizations",
+     "openapi/_original/crunchbase-data-predictions-openapi.yml#GET /data/entities/organizations/{entity_id}",
+     "openapi/_original/crunchbase-data-predictions-openapi.yml#POST /data/searches/organizations"
+    ]
+   },
+   "customeros": {
+    "segments": [
+     "organizations",
+     "organization"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "organization": "object",
+     "requestId": "string",
+     "status": "string",
+     "customId": "string",
+     "icpFit": "boolean",
+     "leadSource": "string",
+     "linkedinUrl": "string",
+     "name": "string",
+     "relationship": "string",
+     "website": "string",
+     "message": "string"
+    },
+    "evidence": [
+     "openapi/_original/customeros-customerbase-openapi.yml#GET /customerbase/v1/organizations/{id}",
+     "openapi/_original/customeros-customerbase-openapi.yml#POST /customerbase/v1/organizations",
+     "openapi/_original/customeros-enrich-openapi.yml#GET /enrich/v1/organization",
+     "openapi/_original/customeros-swagger.json#GET /customerbase/v1/organizations/{id}",
+     "openapi/_original/customeros-swagger.json#GET /enrich/v1/organization",
+     "openapi/_original/customeros-swagger.json#POST /customerbase/v1/organizations"
+    ]
+   },
+   "databook": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "company_name": "string",
+     "logo_url": null,
+     "nickname": null
+    },
+    "evidence": [
+     "openapi/_original/databook-openapi.json#GET /v1/asset/companies"
+    ]
+   },
+   "demandbase": {
+    "segments": [
+     "companies",
+     "company"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "city": "string",
+     "state": "string",
+     "country": "string",
+     "companyId": "integer",
+     "website": "string",
+     "ticker": "string",
+     "areaCodes": "array",
+     "cities": "string",
+     "businessTypes": "array",
+     "companyStatus": "array",
+     "fiscalYearEnd": "string",
+     "fortuneRanking": "string",
+     "industries": "array",
+     "subIndustries": "array",
+     "keywords": "array",
+     "minEmployees": "string",
+     "maxEmployees": "string",
+     "minRevenue": "string",
+     "maxRevenue": "string",
+     "naics": "array",
+     "sicCodes": "array",
+     "regions": "array",
+     "street": "array",
+     "companyType": "array",
+     "businessStructure": "string",
+     "zipCodes": "array",
+     "sortBy": "string",
+     "sortOrder": "string",
+     "primaryIndustryOnly": "string",
+     "primarySICOnly": "string",
+     "gender": "string",
+     "ethnicity": "array",
+     "wbe": "string",
+     "vbe": "string",
+     "dbe": "string",
+     "mbe": "string",
+     "lgbt": "string",
+     "disabled": "string",
+     "companyIdsToExclude": "array",
+     "page": "string",
+     "perPage": "string",
+     "companyName": "string",
+     "description": "string",
+     "tickers": "array",
+     "classification": "object",
+     "address": "object",
+     "phone": "string",
+     "revenue": "number",
+     "revenueCurrency": "string",
+     "employeeCount": "integer",
+     "sic": "string",
+     "sicDescription": "string",
+     "naicsDescription": "string",
+     "financialYearEnd": "string",
+     "equifaxId": "string",
+     "companyTaxId": "string",
+     "britishSics": "array",
+     "foundedIn": "string",
+     "socialHandles": "object",
+     "diversity": "object",
+     "siteTypes": "array",
+     "siteCount": "integer",
+     "siteLocationCount": "integer",
+     "currentCompanyId": "integer",
+     "websites": "array",
+     "companyCompetitorIds": "array",
+     "familyTree": "object",
+     "acquisitions": "object",
+     "techUsed": "object",
+     "companyLogos": "array",
+     "competitors": "array"
+    },
+    "evidence": [
+     "openapi/_original/demandbase-b2b-openapi.json#GET /company/{companyId}",
+     "openapi/_original/demandbase-b2b-openapi.json#POST /companies",
+     "openapi/_original/demandbase-b2b-openapi.yml#GET /company/{companyId}",
+     "openapi/_original/demandbase-b2b-openapi.yml#POST /companies"
+    ]
+   },
+   "dotfile": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "case_id": "string",
+     "type": "string",
+     "name": "string",
+     "is_relevant": "boolean",
+     "commercial_name": "string",
+     "country": "string",
+     "registration_number": "string",
+     "registration_date": "string",
+     "status": "string",
+     "legal_form": "string",
+     "entity_legal_form": "string",
+     "entity_legal_form_label": "string",
+     "address": "object",
+     "classifications": "array",
+     "banking_information": "object",
+     "share_capital": "string",
+     "tax_identification_number": "string",
+     "website_url": "string",
+     "employer_identification_number": "string",
+     "last_activity_at": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "custom_properties": "object",
+     "document_orders": "array",
+     "checks": "array",
+     "relations": "array",
+     "data_lineage": "object"
+    },
+    "evidence": [
+     "openapi/_original/dotfile-companies-openapi.yml#DELETE /v1/companies/{id}",
+     "openapi/_original/dotfile-companies-openapi.yml#GET /v1/companies",
+     "openapi/_original/dotfile-companies-openapi.yml#GET /v1/companies/{id}",
+     "openapi/_original/dotfile-companies-openapi.yml#PATCH /v1/companies/{id}",
+     "openapi/_original/dotfile-companies-openapi.yml#POST /v1/companies",
+     "openapi/_original/dotfile-openapi.json#DELETE /v1/companies/{id}",
+     "openapi/_original/dotfile-openapi.json#GET /v1/companies",
+     "openapi/_original/dotfile-openapi.json#GET /v1/companies/{id}",
+     "openapi/_original/dotfile-openapi.json#PATCH /v1/companies/{id}",
+     "openapi/_original/dotfile-openapi.json#POST /v1/companies"
+    ]
+   },
+   "gojiberry-ai": {
+    "segments": [
+     "organization"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "number",
+     "companyName": "string",
+     "website": "string",
+     "industry": "string",
+     "companySize": "string",
+     "description": "string",
+     "linkedinPage": "string",
+     "ownerId": "number",
+     "createdAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/gojiberry-ai-openapi.json#GET /v1/organization"
+    ]
+   },
+   "harmonic-ai": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "website": null,
+     "logo_url": null,
+     "name": null,
+     "legal_name": null,
+     "description": null,
+     "customer_type": null,
+     "founding_date": null,
+     "headcount": null,
+     "ownership_status": null,
+     "company_type": "string",
+     "location": null,
+     "contact": null,
+     "socials": null,
+     "funding": null,
+     "name_aliases": "array",
+     "website_domain_aliases": "array",
+     "corrected_headcount": null,
+     "external_headcount": null,
+     "web_traffic": null,
+     "stage": null,
+     "redirect_urn": null,
+     "requested_entity_urn": null,
+     "entity_urn": "string",
+     "id": "integer",
+     "funding_attribute_null_status": null,
+     "headquarters": null,
+     "tags": null,
+     "tags_v2": null,
+     "snapshots": null,
+     "initialized_date": null,
+     "highlights": "array",
+     "traction_metrics": null,
+     "updated_at": null,
+     "people": null,
+     "employee_highlights": "array",
+     "funding_rounds": "array",
+     "notable_followers": "array",
+     "num_notable_followers": null,
+     "funding_per_employee": null,
+     "external_description": null,
+     "short_description": null,
+     "investor_urn": null,
+     "related_companies": null,
+     "leadership_prior_companies": null,
+     "stealth_emergence_date": null,
+     "currently_raising": null,
+     "founder_story": null,
+     "founder_attachments": null,
+     "enrichment_urn": null,
+     "shared_with_team": "boolean",
+     "user_watchlist_type": null,
+     "creator": null,
+     "owner": null,
+     "companies": null,
+     "companies_count": null,
+     "custom_fields": "array",
+     "named_views": "array",
+     "named_views_order": "array",
+     "created_at": "string",
+     "user_relevance_score_influence_type": null,
+     "urn": null,
+     "metadata": null
+    },
+    "evidence": [
+     "openapi/_original/harmonic-ai-openapi.json#DELETE /watchlists/companies/{id_or_urn}",
+     "openapi/_original/harmonic-ai-openapi.json#GET /companies",
+     "openapi/_original/harmonic-ai-openapi.json#GET /companies/{id_or_urn}",
+     "openapi/_original/harmonic-ai-openapi.json#GET /watchlists/companies",
+     "openapi/_original/harmonic-ai-openapi.json#GET /watchlists/companies/{id_or_urn}",
+     "openapi/_original/harmonic-ai-openapi.json#POST /companies",
+     "openapi/_original/harmonic-ai-openapi.json#POST /watchlists/companies",
+     "openapi/_original/harmonic-ai-openapi.json#PUT /watchlists/companies/{id_or_urn}"
+    ]
+   },
+   "hunter": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/hunter-openapi.json#DELETE /companies/{id}",
+     "openapi/_original/hunter-openapi.json#DELETE /company-lists/{id}/companies/{company_id}",
+     "openapi/_original/hunter-openapi.json#GET /companies",
+     "openapi/_original/hunter-openapi.json#GET /companies/{id}",
+     "openapi/_original/hunter-openapi.json#POST /companies",
+     "openapi/_original/hunter-openapi.json#POST /company-lists/{id}/companies"
+    ]
+   },
+   "lemlist": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "filterId": "string",
+     "in": "array",
+     "out": "array",
+     "results": "array",
+     "total": "integer",
+     "took": "integer",
+     "page": "integer",
+     "size": "integer",
+     "search": "string",
+     "limitation": "integer",
+     "team": "string",
+     "_id": "string",
+     "name": "string",
+     "domain": "string",
+     "industry": "string",
+     "location": "string",
+     "fields": "object",
+     "createdBy": "string",
+     "ownerId": "string",
+     "createdAt": "string",
+     "fieldRejections": "array",
+     "crmSync": "object",
+     "success": "boolean",
+     "data": "object",
+     "companyId": "string",
+     "linkedinUrl": "string",
+     "linkedinUrlSalesNav": "string",
+     "companyOwner": "string",
+     "specialties": "string",
+     "tagline": "string",
+     "type": "string",
+     "description": "string",
+     "foundedOn": "string",
+     "headquarters": "string",
+     "picture": "string",
+     "source": "string",
+     "deletedCompanyId": "string",
+     "unlinkedContacts": "integer"
+    },
+    "evidence": [
+     "openapi/_original/lemlist-openapi-v1-legacy.json#GET /companies",
+     "openapi/_original/lemlist-openapi-v1-legacy.json#GET /schema/companies",
+     "openapi/_original/lemlist-openapi-v1-legacy.json#POST /database/companies",
+     "openapi/_original/lemlist-openapi-v2.json#DELETE /companies/{companyId}",
+     "openapi/_original/lemlist-openapi-v2.json#GET /companies",
+     "openapi/_original/lemlist-openapi-v2.json#POST /companies",
+     "openapi/_original/lemlist-openapi-v2.json#POST /database/companies",
+     "openapi/_original/lemlist-openapi.yml#DELETE /companies/{companyId}",
+     "openapi/_original/lemlist-openapi.yml#GET /companies",
+     "openapi/_original/lemlist-openapi.yml#POST /companies",
+     "openapi/_original/lemlist-openapi.yml#POST /database/companies"
+    ]
+   },
+   "lusha": {
+    "segments": [
+     "enrich",
+     "company",
+     "companies"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "alternativeName": "string",
+     "domain": "string",
+     "alternativeDomains": "array",
+     "description": "string",
+     "companyType": "string",
+     "yearFounded": "number",
+     "employeeCount": "object",
+     "industry": "string",
+     "subIndustry": "string",
+     "specialities": "array",
+     "industryTags": "array",
+     "sicCodes": "array",
+     "naicsCodes": "array",
+     "companyOffering": "string",
+     "emailDomain": "string",
+     "additionalIndustries": "array",
+     "estimatedAnnualItSpend": "object",
+     "monthlyWebsiteTraffic": "object",
+     "location": "object",
+     "additionalLocations": "array",
+     "socialLinks": "object",
+     "linkedinFollowers": "number",
+     "revenueRange": "object",
+     "funding": null,
+     "intent": null,
+     "technologies": "array",
+     "popularityTier": "number",
+     "logoUrl": "string",
+     "employeesByDepartment": "array",
+     "employeesByLocation": "array",
+     "employeesBySeniority": "array",
+     "competitors": "array",
+     "businessModel": "array",
+     "phone": "string",
+     "email": "string",
+     "keywords": "array",
+     "specialitiesRefactored": "array",
+     "error": "object",
+     "ids": "array",
+     "reveal": "array",
+     "tableId": "string",
+     "employees": "string",
+     "founded": "string",
+     "fqdn": "string",
+     "companyLocations": "array",
+     "lushaPopularityTier": "integer",
+     "companySize": "object",
+     "mainIndustry": "string",
+     "social": "object",
+     "address": "string",
+     "categories": "array",
+     "industryPrimaryGroupDetails": "object",
+     "website": "string",
+     "riskNews": "array",
+     "commercialActivityNews": "array",
+     "corporateStrategyNews": "array",
+     "financialEventsNews": "array",
+     "peopleNews": "array",
+     "marketIntelligenceNews": "array",
+     "productActivityNews": "array",
+     "surgeInHiring": "array",
+     "surgeInHiringByDepartment": "array",
+     "surgeInHiringByLocation": "array",
+     "websiteTrafficIncrease": "array",
+     "websiteTrafficDecrease": "array",
+     "itSpendIncrease": "array",
+     "itSpendDecrease": "array",
+     "headcountIncrease1m": "array",
+     "headcountDecrease1m": "array",
+     "headcountIncrease3m": "array",
+     "headcountDecrease3m": "array",
+     "headcountIncrease6m": "array",
+     "headcountDecrease6m": "array",
+     "headcountIncrease12m": "array",
+     "headcountDecrease12m": "array",
+     "companyId": "string",
+     "domains": "object",
+     "stateCode": "string",
+     "city": "string",
+     "state": "string",
+     "country": "string",
+     "countryIso2": "string",
+     "continent": "string",
+     "rawLocation": "string",
+     "coordinates": "array",
+     "requestId": "string",
+     "companiesIds": "array",
+     "companies": "object",
+     "endDate": "string",
+     "startDate": "string",
+     "creditCharged": "integer",
+     "companyIds": "array",
+     "signals": "array",
+     "maxResultsPerSignal": "integer",
+     "filters": "object",
+     "linkedinUrl": "string",
+     "dedupeSessionId": "string",
+     "seeds": "object",
+     "exclude": "object",
+     "limit": "integer"
+    },
+    "evidence": [
+     "openapi/_original/lusha-openapi.yml#POST /v3/companies/enrich",
+     "openapi/_original/lusha-v2-openapi.yaml#GET /v2/company",
+     "openapi/_original/lusha-v2-openapi.yaml#POST /api/signals/companies",
+     "openapi/_original/lusha-v2-openapi.yaml#POST /prospecting/company/enrich",
+     "openapi/_original/lusha-v2-openapi.yaml#POST /v2/company",
+     "openapi/_original/lusha-v2-openapi.yaml#POST /v3/lookalike/companies"
+    ]
+   },
+   "madkudu": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "object_type": null,
+     "domain": "string",
+     "properties": null,
+     "company": null
+    },
+    "evidence": [
+     "openapi/_original/madkudu-legacy-api-openapi.yml#GET /v1/companies",
+     "openapi/_original/madkudu-legacy-api-openapi.yml#POST /v1/companies"
+    ]
+   },
+   "mattermark": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "company_name": "string",
+     "domain": "string",
+     "url": "string",
+     "name": "string",
+     "description": "string",
+     "website": "string",
+     "mattermark_score": "integer",
+     "employees": "integer",
+     "employees_month_ago": "integer",
+     "employees_6_months_ago": "integer",
+     "website_uniques": "integer",
+     "mobile_downloads": "integer",
+     "stage": "string",
+     "total_funding": "integer",
+     "last_funding_amount": "integer",
+     "last_funding_date": "string",
+     "location": "string",
+     "city": "string",
+     "state": "string",
+     "zip": "string",
+     "country": "string",
+     "twitter_handle": "string",
+     "facebook_handle": "string",
+     "linkedin_id": "integer",
+     "added_date": "string",
+     "revenue_range": "string",
+     "itunes_apps": "array",
+     "google_play_apps": "array",
+     "funding": "array",
+     "acquired_by": "array",
+     "acquired_companies": "array",
+     "est_founding_date": "string",
+     "business_models": "string",
+     "industries": "string",
+     "stories": "array",
+     "growth_scores": "array",
+     "mindshare_scores": "array",
+     "employee_count": "array",
+     "alexa_rank": "array",
+     "facebook_talking_count": "array",
+     "facebook_like_count": "array",
+     "twitter_follower_count": "array",
+     "twitter_mentions": "string",
+     "linkedin_follower_count": "array",
+     "itunes_usa_weekly_downloads": "array",
+     "inbound_links": "array",
+     "est_monthly_uniques": "array"
+    },
+    "evidence": [
+     "openapi/_original/mattermark-rest-api-openapi.yml#GET /companies",
+     "openapi/_original/mattermark-rest-api-openapi.yml#GET /companies/{id}",
+     "openapi/_original/mattermark-swagger.yaml#GET /companies",
+     "openapi/_original/mattermark-swagger.yaml#GET /companies/{id}"
+    ]
+   },
+   "ocean-io": {
+    "segments": [
+     "companies",
+     "company"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "domain": "string",
+     "logo": "string",
+     "name": "string",
+     "countryFilters": "array",
+     "excludeDomains": "array",
+     "forLookalikeSearch": "boolean",
+     "searchAfter": "string",
+     "detail": "string",
+     "total": "integer",
+     "missingDomains": "object",
+     "redirectMap": "object",
+     "creditsUsed": "number",
+     "companies": "array",
+     "size": "integer",
+     "from": "integer",
+     "companiesFilters": "object",
+     "peopleFilters": "object",
+     "fields": "array",
+     "includeDomainsStatuses": "object",
+     "countries": "array",
+     "primaryCountry": "string",
+     "companySize": "string",
+     "industryCategories": "array",
+     "industries": "array",
+     "linkedinIndustry": "string",
+     "ecommerce": "boolean",
+     "keywords": "array",
+     "employeeCountOcean": "integer",
+     "employeeCountLinkedin": "integer",
+     "revenue": "string",
+     "yearFounded": "integer",
+     "description": "string",
+     "emails": "array",
+     "phones": "array",
+     "technologies": "array",
+     "technologyCategories": "array",
+     "mobileApps": "array",
+     "webTraffic": "object",
+     "medias": "object",
+     "legalName": "string",
+     "locations": "array",
+     "departmentSizes": "array",
+     "rootUrl": "string",
+     "faxes": "array",
+     "impressum": "object",
+     "fundingRound": "object",
+     "redirectedFrom": "array",
+     "updatedAt": "string",
+     "headcountGrowth": "object",
+     "headcountGrowthPerDepartment": "array",
+     "id": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "jobTitle": "string",
+     "email": "string",
+     "phone": "string",
+     "facebook": "string",
+     "twitter": "string",
+     "linkedin": "string",
+     "country": "string",
+     "domains": "array",
+     "successfulDomains": "array",
+     "triggeredDomains": "array",
+     "ignoredDomains": "array",
+     "dataErrors": "object",
+     "status": "string",
+     "companyDataMapping": "object",
+     "webhookUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/ocean-io-api-openapi.yml#POST /v2/autocomplete/companies",
+     "openapi/_original/ocean-io-api-openapi.yml#POST /v2/enrich/companies",
+     "openapi/_original/ocean-io-api-openapi.yml#POST /v2/enrich/company",
+     "openapi/_original/ocean-io-api-openapi.yml#POST /v2/lookup/companies",
+     "openapi/_original/ocean-io-api-openapi.yml#POST /v2/search/companies",
+     "openapi/_original/ocean-io-api-openapi.yml#POST /v2/warmup/companies",
+     "openapi/_original/ocean-io-api-openapi.yml#POST /v3/search/companies",
+     "openapi/_original/ocean-io-openapi.json#POST /v2/autocomplete/companies",
+     "openapi/_original/ocean-io-openapi.json#POST /v2/enrich/companies",
+     "openapi/_original/ocean-io-openapi.json#POST /v2/enrich/company",
+     "openapi/_original/ocean-io-openapi.json#POST /v2/lookup/companies",
+     "openapi/_original/ocean-io-openapi.json#POST /v2/search/companies"
+    ]
+   },
+   "openmercantil": {
+    "segments": [
+     "companies",
+     "company"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "company": "object",
+     "events": "array",
+     "officers": "array",
+     "summary": "object",
+     "_source_catalog": "object",
+     "_data_sources_used": "array",
+     "_attributions": "array",
+     "code": "string",
+     "count": [
+      "integer",
+      "null"
+     ],
+     "count_status": "string",
+     "limit": "integer",
+     "offset": "integer",
+     "sort": "string",
+     "items": "array",
+     "slug": "string",
+     "name": "string",
+     "cif": "string",
+     "registered_address": "string",
+     "province": "string",
+     "registry": "string",
+     "legal_form": "string",
+     "status": "string",
+     "cnae": "string",
+     "founding_date": "string",
+     "last_event": "string",
+     "events_count": "integer",
+     "aliases": "array"
+    },
+    "evidence": [
+     "openapi/_original/openmercantil-openapi-1.9.3.json#GET /api/v1/company/{slug}",
+     "openapi/_original/openmercantil-openapi-1.9.3.json#GET /api/v1/export/companies",
+     "openapi/_original/openmercantil-openapi-1.9.3.json#GET /api/v1/sector/{cnae}/companies",
+     "openapi/_original/openmercantil-openapi.yml#GET /api/v1/company/{slug}",
+     "openapi/_original/openmercantil-openapi.yml#GET /api/v1/sector/{code}/companies"
+    ]
+   },
+   "orthogonal": {
+    "segments": [
+     "companies",
+     "company",
+     "enrich",
+     "organizations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /apollo/api/v1/organizations/{id}",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /aviato/company/enrich",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /aviato/person/investments/companies",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /captaindata/companies/enrich",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /company-enrich/companies",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /company-enrich/companies/enrich",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /crustdata/screener/company",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /fundable/company",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /icypeas/api/scrape/company",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /peopledatalabs/v5/company/enrich",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /predictleads/v3/companies/{id_or_domain}",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /predictleads/v3/discover/companies"
+    ]
+   },
+   "peopledatalabs": {
+    "segments": [
+     "enrich"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "affiliated_profiles": "array",
+     "alternative_names": "array",
+     "employee_count": "integer",
+     "facebook_url": "string",
+     "founded": "integer",
+     "headline": "string",
+     "id": "string",
+     "industry": "string",
+     "linkedin_id": "string",
+     "linkedin_url": "string",
+     "location": "object",
+     "name": "string",
+     "profiles": "array",
+     "size": "string",
+     "summary": "string",
+     "tags": "array",
+     "ticker": "string",
+     "twitter_url": "string",
+     "type": "string",
+     "website": "string"
+    },
+    "evidence": [
+     "openapi/_original/peopledatalabs-docs-openapi.json#GET /v5/company/enrich",
+     "openapi/_original/peopledatalabs-openapi.yml#GET /v5/company/enrich"
+    ]
+   },
+   "podium": {
+    "segments": [
+     "organizations"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "archived": "boolean",
+     "businessName": "string",
+     "createdAt": "string",
+     "uid": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/podium-accounts-openapi-original.json#GET /v4/organizations/{uid}",
+     "openapi/_original/podium-accounts-openapi.yml#GET /v4/organizations/{uid}"
+    ]
+   },
+   "qualified-com": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "domain": "string",
+     "name": "string",
+     "fields": "object",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/qualified-com-enterprise-api-openapi.json#POST /v2/companies"
+    ]
+   },
+   "seamless-ai": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "advertisingIntelligenceUrl": "string",
+     "alexaScoreUrl": "string",
+     "annualRevenue": "string",
+     "apiResearchId": "string",
+     "phones": "string",
+     "phonesAiScores": "string",
+     "createdAt": "string",
+     "description": "string",
+     "domain": "string",
+     "employeeReviewsUrl": "string",
+     "foundedOn": "string",
+     "googleFinanceUrl": "string",
+     "googleResearchUrl": "string",
+     "industries": "string",
+     "intelUrl": "string",
+     "jobPostingsUrl": "string",
+     "linkedInProfileUrl": "string",
+     "linkedInId": "string",
+     "localSportsTeamsUrl": "string",
+     "localWeatherUrl": "string",
+     "location": "object",
+     "name": "string",
+     "newsUrl": "string",
+     "paidSearchIntelligenceUrl": "string",
+     "paidSearchKeywordsIntelligenceUrl": "string",
+     "revenueRange": "string",
+     "searchMarketingIntelligenceUrl": "string",
+     "secFilingsUrl": "string",
+     "seoResearchUrl": "string",
+     "sicCode": "string",
+     "similarWebsitesUrl": "string",
+     "socialMediaMentionsUrl": "string",
+     "socialMediaPostsUrl": "string",
+     "socialPostsUrl": "string",
+     "staffCount": "string",
+     "staffCountRange": "string",
+     "topTechnologies": "string",
+     "updatedAt": "string",
+     "webTechnologiesUrl": "string",
+     "websiteAuditUrl": "string",
+     "websiteAudit2Url": "string",
+     "websiteGraderUrl": "string",
+     "whoisUrl": "string",
+     "wikipediaUrl": "string",
+     "yahooFinanceUrl": "string",
+     "newsAndEvents": "array",
+     "fundingTotal": "string",
+     "latestFundingDate": "string",
+     "latestFundingClassifications": "array",
+     "companyType": "string",
+     "stockTicker": "string",
+     "searchResultId": "string",
+     "street1": "string",
+     "street2": "string",
+     "street3": "string",
+     "city": "string",
+     "state": "string",
+     "postCode": "string",
+     "country": "string",
+     "liUrl": "string",
+     "employeeCount": "string",
+     "numContacts": "string",
+     "technologies": "array",
+     "companyLIURL": "string",
+     "nextToken": "string",
+     "limit": "integer",
+     "companyName": "array",
+     "companyNameSearchType": "string",
+     "companyDomain": "array",
+     "companyState": "array",
+     "companyCountry": "array",
+     "companyZipCode": "array",
+     "industry": "array",
+     "companyKeyword": "array",
+     "companySize": "array",
+     "companyRevenue": "array",
+     "technologiesIsOr": "boolean",
+     "newsTypes": "array",
+     "newsTypeDates": "array",
+     "latestFundingDates": "array",
+     "latestFundingTotals": "array"
+    },
+    "evidence": [
+     "openapi/_original/seamless-ai-public-api-openapi-original.json#GET /companies",
+     "openapi/_original/seamless-ai-public-api-openapi-original.json#POST /search/companies"
+    ]
+   },
+   "sendpulse": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "companyName": "string",
+     "responsibleId": "integer",
+     "address": "string",
+     "annualBusinessVolume": "integer",
+     "currency": "string",
+     "messengers": "array",
+     "phones": "array",
+     "emails": "array",
+     "attributes": "array",
+     "contacts": "array",
+     "attachments": "array",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/sendpulse-crm-openapi.yml#DELETE /companies/{companyId}",
+     "openapi/_original/sendpulse-crm-openapi.yml#GET /companies/{companyId}",
+     "openapi/_original/sendpulse-crm-openapi.yml#POST /companies",
+     "openapi/_original/sendpulse-crm-openapi.yml#PUT /companies/{companyId}"
+    ]
+   },
+   "serbia-company-data": {
+    "segments": [
+     "company"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "registrationNumber": "string",
+     "businessName": [
+      "string",
+      "null"
+     ],
+     "status": [
+      "string",
+      "null"
+     ],
+     "incorporationDate": [
+      "string",
+      "null"
+     ],
+     "legalForm": [
+      "string",
+      "null"
+     ],
+     "activityCode": [
+      "string",
+      "number",
+      "null"
+     ],
+     "latestFinancialStatement": [
+      "object",
+      "null"
+     ],
+     "company": "object",
+     "registrationNumbers": "array"
+    },
+    "evidence": [
+     "openapi/_original/serbia-company-data-openapi.json#GET /api/company",
+     "openapi/_original/serbia-company-data-openapi.json#POST /api/company/batch"
+    ]
+   },
+   "sumble": {
+    "segments": [
+     "organizations"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "credits_used": "integer",
+     "credits_remaining": "integer",
+     "organizations": "array",
+     "matched_count": null,
+     "total": "integer",
+     "source_data_url": null,
+     "filter": null,
+     "select": "object",
+     "limit": "integer",
+     "offset": "integer",
+     "order_by_column": null,
+     "order_by_direction": null,
+     "order_by_job_function": null,
+     "order_by_advanced_query": null,
+     "added": "array",
+     "failed_ids": "array",
+     "failed_slugs": "array",
+     "organization_ids": "array",
+     "organization_slugs": "array"
+    },
+    "evidence": [
+     "openapi/_original/sumble-openapi-original.json#POST /v9/organization-lists/{list_id}/organizations",
+     "openapi/_original/sumble-openapi-original.json#POST /v9/organizations"
+    ]
+   },
+   "supaglue": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "description": "string",
+     "city": "string",
+     "country": "string",
+     "zip": "string",
+     "state": "string",
+     "address": "string",
+     "phone": "string",
+     "industry": "string",
+     "name": "string",
+     "numberofemployees": "string",
+     "hubspot_owner_id": "string",
+     "domain": "string",
+     "website": "string",
+     "is_deleted": "boolean",
+     "createdate": "string",
+     "notes_last_updated": "string",
+     "raw_data": "object"
+    },
+    "evidence": [
+     "openapi/_original/supaglue-data-api-openapi.yml#GET /hubspot/companies"
+    ]
+   },
+   "surfe": {
+    "segments": [
+     "enrich"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "companies": "array",
+     "include": "object",
+     "notificationOptions": "object",
+     "name": "string",
+     "domain": "string",
+     "websites": "array",
+     "description": "string",
+     "industry": "string",
+     "keywords": "array",
+     "employeeCount": "integer",
+     "revenue": "string",
+     "founded": "integer",
+     "hqCountry": "string",
+     "hqAddress": "string",
+     "linkedInUrl": "string",
+     "linkedInFollowersCount": "integer",
+     "phones": "array",
+     "isPublic": "boolean",
+     "stockExchange": "string",
+     "stockSymbol": "string",
+     "fundingRounds": "array",
+     "parentOrganization": "string",
+     "externalID": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/surfe-openapi.yml#GET /companies/enrich/{id}",
+     "openapi/_original/surfe-openapi.yml#POST /companies/enrich"
+    ]
+   },
+   "the-hog": {
+    "segments": [
+     "company"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "identifier": "string",
+     "name": "string",
+     "description": "string",
+     "website": "string",
+     "industry": "string",
+     "company_size": "string",
+     "headquarters": "string",
+     "founded": "number",
+     "specialties": "array",
+     "logo_url": "string",
+     "follower_count": "number",
+     "employee_count": "number",
+     "linkedin_url": "string"
+    },
+    "evidence": [
+     "openapi/_original/the-hog-openapi.json#POST /api/v1/platform/scrapers/linkedin/company"
+    ]
+   },
+   "thecompaniesapi": {
+    "segments": [
+     "companies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "companies": "array",
+     "meta": "object",
+     "query": "array",
+     "actionId": "number",
+     "domainsToExclude": "string",
+     "linkedinToExclude": "string",
+     "page": "number",
+     "search": "string",
+     "searchFields": "array",
+     "simplified": "boolean",
+     "size": "number",
+     "sortFields": "array",
+     "sortKey": "string",
+     "sortOrder": "string",
+     "id": "string",
+     "about": "object",
+     "analytics": "object",
+     "apps": "object",
+     "assets": "object",
+     "codes": "object",
+     "contacts": "object",
+     "contents": "object",
+     "descriptions": "object",
+     "domain": "object",
+     "finances": "object",
+     "locations": "object",
+     "people": "object",
+     "secondaries": "object",
+     "socials": "object",
+     "technologies": "object",
+     "urls": "object",
+     "vectors": "object",
+     "action": "object"
+    },
+    "evidence": [
+     "openapi/_original/thecompaniesapi-openapi.yml#GET /v2/companies",
+     "openapi/_original/thecompaniesapi-openapi.yml#GET /v2/companies/{domain}",
+     "openapi/_original/thecompaniesapi-openapi.yml#GET /v2/lists/{listId}/companies",
+     "openapi/_original/thecompaniesapi-openapi.yml#GET /v2/lists/{listId}/companies/{domain}",
+     "openapi/_original/thecompaniesapi-openapi.yml#POST /v2/companies",
+     "openapi/_original/thecompaniesapi-openapi.yml#POST /v2/lists/{listId}/companies"
+    ]
+   },
+   "topograph": {
+    "segments": [
+     "company"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "request": null,
+     "company": null,
+     "ultimateBeneficialOwners": "array",
+     "legalRepresentatives": "array",
+     "shareholders": "array",
+     "subsidiaries": "array",
+     "establishments": "array",
+     "otherKeyPersons": "array",
+     "graph": null,
+     "documents": "object",
+     "companyRelationships": "array",
+     "dataSources": null,
+     "enrichmentReport": "string",
+     "id": "string",
+     "countryCode": "string",
+     "dataPoints": "array",
+     "graphContinueFromNodeIds": "array",
+     "metadata": "object",
+     "graphMaxBudget": "number",
+     "graphInteractive": "boolean",
+     "profileMaxBudget": "number",
+     "mode": "string",
+     "fast": "boolean",
+     "authoritative": "boolean",
+     "maxBudget": "number",
+     "agenticEnrichment": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/topograph-openapi-original.json#GET /v2/company/{requestId}",
+     "openapi/_original/topograph-openapi-original.json#POST /v2/company"
+    ]
+   },
+   "zoominfo": {
+    "segments": [
+     "enrich",
+     "company"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": null,
+     "meta": null,
+     "name": "string",
+     "metroRegion": "string",
+     "industryCodes": "string",
+     "techAttributeTagList": "string",
+     "ticker": "string",
+     "website": "string",
+     "domainList": "array",
+     "logo": "string",
+     "socialMediaUrls": "array",
+     "revenue": "integer",
+     "employeeCount": "integer",
+     "numberOfContactsInZoomInfo": "integer",
+     "phone": "string",
+     "fax": "string",
+     "street": "string",
+     "city": "string",
+     "state": "string",
+     "zipCode": "string",
+     "country": "string",
+     "continent": "string",
+     "companyStatus": "string",
+     "companyStatusDate": "string",
+     "descriptionList": "array",
+     "sicCodes": "array",
+     "naicsCodes": "array",
+     "competitors": "array",
+     "ultimateParentId": "integer",
+     "ultimateParentName": "string",
+     "ultimateParentRevenue": "integer",
+     "ultimateParentEmployees": "integer",
+     "subUnitCodes": "array",
+     "subUnitType": "string",
+     "subUnitIndustries": "array",
+     "primaryIndustry": "array",
+     "industries": "array",
+     "parentId": "integer",
+     "parentName": "string",
+     "locationCount": "integer",
+     "alexaRank": "string",
+     "metroArea": "string",
+     "lastUpdatedDate": "string",
+     "createdDate": "string",
+     "certificationDate": "string",
+     "certified": "boolean",
+     "hashtags": "array",
+     "products": "array",
+     "techAttributes": "array",
+     "revenueRange": "string",
+     "employeeRange": "string",
+     "companyFunding": "array",
+     "recentFundingAmount": "integer",
+     "recentFundingDate": "string",
+     "totalFundingAmount": "integer",
+     "employeeGrowth": "object",
+     "matchCompanyInput": "array",
+     "outputFields": "array",
+     "fieldName": "string",
+     "fieldType": "string",
+     "description": "string",
+     "accessGranted": "string",
+     "jobId": "string",
+     "jobType": "string",
+     "query": "object"
+    },
+    "evidence": [
+     "openapi/_original/zoominfo-gtm-data-v1-openapi.json#POST /data/v1/companies/corporate-hierarchy/enrich",
+     "openapi/_original/zoominfo-gtm-data-v1-openapi.json#POST /data/v1/companies/enrich",
+     "openapi/_original/zoominfo-gtm-data-v1-openapi.json#POST /data/v1/companies/hashtags/enrich",
+     "openapi/_original/zoominfo-gtm-data-v1-openapi.json#POST /data/v1/companies/org-chart/enrich",
+     "openapi/_original/zoominfo-gtm-data-v1-openapi.json#POST /data/v1/companies/technologies/enrich",
+     "openapi/_original/zoominfo-openapi.yml#GET /lookup/inputfields/company/enrich",
+     "openapi/_original/zoominfo-openapi.yml#GET /lookup/outputfields/company/enrich",
+     "openapi/_original/zoominfo-openapi.yml#POST /bulk/enrich/company",
+     "openapi/_original/zoominfo-openapi.yml#POST /bulk/search/company",
+     "openapi/_original/zoominfo-openapi.yml#POST /enrich/company",
+     "openapi/_original/zoominfo-openapi.yml#POST /search/company"
+    ]
+   }
+  },
+  "email_lookup": {
+   "deeplead": {
+    "segments": [
+     "find"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "found": "boolean",
+     "chargedCredits": "number",
+     "email": null,
+     "alternateEmails": "array",
+     "name": null,
+     "jobTitle": null,
+     "companyName": null,
+     "companyWebsite": null,
+     "linkedin": null,
+     "domain": "string"
+    },
+    "evidence": [
+     "openapi/_original/deeplead-api-openapi.json#POST /persons/email/find"
+    ]
+   },
+   "enrich-so": {
+    "segments": [
+     "email-finder"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "firstName": "string",
+     "lastName": "string",
+     "domain": "string",
+     "found": "boolean",
+     "email": "string",
+     "confidence": "string",
+     "isCatchAll": "boolean",
+     "provider": "string",
+     "message": "string",
+     "batchId": "string",
+     "status": "string",
+     "itemCount": "integer",
+     "originalCount": "integer",
+     "duplicatesRemoved": "integer"
+    },
+    "evidence": [
+     "openapi/_original/enrich-so-v3-harvested-openapi.yml#POST /email-finder",
+     "openapi/_original/enrich-so-v3-harvested-openapi.yml#POST /email-finder/batch"
+    ]
+   },
+   "hunter": {
+    "segments": [
+     "email-finder",
+     "email-verifier"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "first_name": "string",
+     "last_name": "string",
+     "email": "string",
+     "score": "integer",
+     "domain": "string",
+     "accept_all": "boolean",
+     "position": "string",
+     "twitter": "string",
+     "linkedin_url": "string",
+     "phone_number": "string",
+     "company": "string",
+     "source_type": "string",
+     "sources": "array",
+     "verification": "object",
+     "status": "string",
+     "regexp": "boolean",
+     "gibberish": "boolean",
+     "disposable": "boolean",
+     "webmail": "boolean",
+     "mx_records": "boolean",
+     "smtp_server": "boolean",
+     "smtp_check": "boolean",
+     "block": "boolean",
+     "result": "string",
+     "_deprecation_notice": "string"
+    },
+    "evidence": [
+     "openapi/_original/hunter-openapi.json#GET /email-finder",
+     "openapi/_original/hunter-openapi.json#GET /email-verifier"
+    ]
+   },
+   "hunter-io": {
+    "segments": [
+     "email-finder",
+     "email-verifier"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "first_name": "string",
+     "last_name": "string",
+     "email": "string",
+     "score": "integer",
+     "domain": "string",
+     "accept_all": "boolean",
+     "position": "string",
+     "twitter": "string",
+     "linkedin_url": "string",
+     "phone_number": "string",
+     "company": "string",
+     "sources": "array",
+     "verification": "object",
+     "status": "string",
+     "result": "string",
+     "regexp": "boolean",
+     "gibberish": "boolean",
+     "disposable": "boolean",
+     "webmail": "boolean",
+     "mx_records": "boolean",
+     "smtp_server": "boolean",
+     "smtp_check": "boolean",
+     "block": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/hunter-email-finder-api-openapi.yml#GET /email-finder",
+     "openapi/_original/hunter-email-verifier-api-openapi.yml#GET /email-verifier"
+    ]
+   },
+   "instantly-ai": {
+    "segments": [
+     "email-verification"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "status": [
+      "null",
+      "string"
+     ],
+     "email": "string",
+     "verification_status": "string",
+     "catch_all": [
+      "boolean",
+      "string"
+     ],
+     "credits": [
+      "null",
+      "number"
+     ],
+     "credits_used": [
+      "null",
+      "number"
+     ],
+     "webhook_url": "string"
+    },
+    "evidence": [
+     "openapi/_original/instantly-ai-api-v2-openapi.json#GET /api/v2/email-verification/{email}",
+     "openapi/_original/instantly-ai-api-v2-openapi.json#POST /api/v2/email-verification",
+     "openapi/_original/instantly-ai-api-v2-openapi.yml#GET /api/v2/email-verification/{email}",
+     "openapi/_original/instantly-ai-api-v2-openapi.yml#POST /api/v2/email-verification"
+    ]
+   },
+   "orthogonal": {
+    "segments": [
+     "email-verification",
+     "email-finder",
+     "email-verifier"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /tomba/v1/email-finder",
+     "openapi/_original/orthogonal-marketplace-openapi.json#GET /tomba/v1/email-verifier",
+     "openapi/_original/orthogonal-marketplace-openapi.json#POST /icypeas/api/email-verification"
+    ]
+   },
+   "revenuebase": {
+    "segments": [
+     "verify"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "email": "string",
+     "process_id": "integer",
+     "filename": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/revenuebase-openapi.json#POST /v2/email/verify",
+     "openapi/_original/revenuebase-openapi.json#POST /v2/email/verify/batch"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "query_param": {
+   "lower": [
+    "abstract-api",
+    "act-on",
+    "adapt-io",
+    "agentum-lat",
+    "akta-pro",
+    "anyapi",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "apollo-api-documentation",
+    "apollo-enrich",
+    "apollo-io",
+    "bitvore",
+    "brand-api",
+    "broke2builtai-com",
+    "bud-co",
+    "builtwith",
+    "caplight",
+    "clay-com",
+    "contextdev",
+    "cracked",
+    "crunchbase-data",
+    "crustapi",
+    "customeros",
+    "databook",
+    "debounce",
+    "deeplead",
+    "demandbase",
+    "demio",
+    "dotfile",
+    "dun-and-bradstreet",
+    "editalmd",
+    "email-verifier-api",
+    "enrich-so",
+    "even-financial",
+    "evrim",
+    "experian",
+    "explorium",
+    "facebook-lead-ads",
+    "fingoal",
+    "globaldatabase-com",
+    "gojiberry-ai",
+    "golden",
+    "golden-recursion",
+    "harmonic-ai",
+    "heron",
+    "hunter",
+    "hunter-io",
+    "infiniteaudience-ai",
+    "instantly-ai",
+    "ipqualityscore",
+    "isbusinessemail",
+    "kagi",
+    "kelvin",
+    "kickbox",
+    "lastdatabase",
+    "leadgenius",
+    "leadiq",
+    "lemlist",
+    "linkedin-ads",
+    "loqate",
+    "lusha",
+    "luxury-presence",
+    "macaroonnetwork-com",
+    "madkudu",
+    "mailboxlayer",
+    "mailgun",
+    "mattermark",
+    "mcp360",
+    "mobly",
+    "namegender",
+    "neverbounce",
+    "ntropy",
+    "openmercantil",
+    "owler",
+    "parallel",
+    "parallel-ai",
+    "parallel-web-systems",
+    "peopledatalabs",
+    "playable",
+    "ploid",
+    "podium",
+    "qualified-com",
+    "radar-cnpj",
+    "refuel-ai",
+    "replyrai",
+    "revenuebase",
+    "rocketreach",
+    "salesflare",
+    "seamless-ai",
+    "sendpulse",
+    "serbia-company-data",
+    "sex-offenders-api",
+    "sirenic-eu",
+    "snov-io",
+    "spade",
+    "structify",
+    "supaglue",
+    "synthient",
+    "the-hog",
+    "thecompaniesapi",
+    "topograph",
+    "tradedatahub",
+    "uchecker",
+    "unify",
+    "uplead",
+    "voygr",
+    "wappalyzer",
+    "wealth-x",
+    "whoapi",
+    "wistia",
+    "zoca",
+    "zoominfo"
+   ],
+   "snake_case": [
+    "abstract-api",
+    "akta-pro",
+    "anyapi",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "apollo-api-documentation",
+    "apollo-enrich",
+    "apollo-io",
+    "bud-co",
+    "clay-com",
+    "contextdev",
+    "crunchbase-data",
+    "databook",
+    "debounce",
+    "demio",
+    "dotfile",
+    "evrim",
+    "experian",
+    "explorium",
+    "facebook-lead-ads",
+    "harmonic-ai",
+    "heron",
+    "hunter",
+    "hunter-io",
+    "infiniteaudience-ai",
+    "instantly-ai",
+    "ipqualityscore",
+    "kelvin",
+    "leadgenius",
+    "madkudu",
+    "mailboxlayer",
+    "mattermark",
+    "mcp360",
+    "namegender",
+    "neuralverge-api",
+    "neverbounce",
+    "ntropy",
+    "openmercantil",
+    "owler",
+    "parallel",
+    "parallel-ai",
+    "parallel-web-systems",
+    "peopledatalabs",
+    "playable",
+    "ploid",
+    "podium",
+    "qualified-com",
+    "refuel-ai",
+    "replyrai",
+    "rocketreach",
+    "salesflare",
+    "sendpulse",
+    "sex-offenders-api",
+    "sirenic-eu",
+    "snov-io",
+    "structify",
+    "sumble",
+    "supaglue",
+    "uchecker",
+    "unify",
+    "uplead",
+    "voygr",
+    "wappalyzer",
+    "wistia",
+    "zoca"
+   ],
+   "camelCase": [
+    "act-on",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "bitvore",
+    "brand-api",
+    "builtwith",
+    "caplight",
+    "contextdev",
+    "crustapi",
+    "customeros",
+    "dashbot",
+    "demandbase",
+    "dun-and-bradstreet",
+    "email-verifier-api",
+    "enrich-so",
+    "even-financial",
+    "fullenrich",
+    "gojiberry-ai",
+    "golden",
+    "golden-recursion",
+    "leadiq",
+    "lemlist",
+    "linkedin-ads",
+    "lusha",
+    "luxury-presence",
+    "mcp360",
+    "mobly",
+    "ocean-io",
+    "ploid",
+    "podium",
+    "radar-cnpj",
+    "salesflare",
+    "seamless-ai",
+    "sendpulse",
+    "thecompaniesapi",
+    "topograph",
+    "wealth-x",
+    "zoca",
+    "zoominfo"
+   ],
+   "other": [
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "apollo-api-documentation",
+    "apollo-io",
+    "bud-co",
+    "openmercantil",
+    "salesflare",
+    "wistia",
+    "zoominfo"
+   ],
+   "kebab-case": [
+    "apifreaks-api-hub-for-developers",
+    "bud-co",
+    "playable"
+   ],
+   "PascalCase": [
+    "builtwith",
+    "lemlist",
+    "zoca"
+   ]
+  },
+  "path_segment": {
+   "lower": [
+    "abstract-api",
+    "act-on",
+    "adapt-io",
+    "agentum-lat",
+    "akta-pro",
+    "albacross",
+    "anyapi",
+    "apifreaks-api-hub-for-developers",
+    "apimesh-xyz",
+    "apiverve",
+    "apollo-api-documentation",
+    "apollo-enrich",
+    "apollo-io",
+    "banyan-systems",
+    "bitvore",
+    "bizapi",
+    "brand-api",
+    "broke2builtai-com",
+    "bud-co",
+    "builtwith",
+    "caplight",
+    "cb-insights",
+    "clay-com",
+    "contextdev",
+    "coresignal",
+    "cracked",
+    "crunchbase-data",
+    "crustapi",
+    "customeros",
+    "dashbot",
+    "databook",
+    "datafiniti",
+    "debounce",
+    "deeplead",
+    "demandbase",
+    "demio",
+    "dotfile",
+    "dun-and-bradstreet",
+    "editalmd",
+    "enrich-so",
+    "even-financial",
+    "evrim",
+    "experian",
+    "explorium",
+    "facebook-lead-ads",
+    "fingoal",
+    "fullenrich",
+    "globaldatabase-com",
+    "gojiberry-ai",
+    "golden",
+    "golden-recursion",
+    "harmonic-ai",
+    "heron",
+    "hunter",
+    "hunter-io",
+    "infiniteaudience-ai",
+    "instantly-ai",
+    "ipqualityscore",
+    "isbusinessemail",
+    "kagi",
+    "kelvin",
+    "kickbox",
+    "koala-io",
+    "lastdatabase",
+    "leadgenius",
+    "leadiq",
+    "leadspace",
+    "lemlist",
+    "leo",
+    "linkedin-ads",
+    "loqate",
+    "lusha",
+    "luxury-presence",
+    "macaroonnetwork-com",
+    "madkudu",
+    "mailboxlayer",
+    "mailersend",
+    "mailgun",
+    "mattermark",
+    "mcp360",
+    "mobly",
+    "moonscale",
+    "namegender",
+    "neuralverge-api",
+    "neverbounce",
+    "ntropy",
+    "ocean-io",
+    "openmercantil",
+    "orthogonal",
+    "owler",
+    "parallel",
+    "parallel-ai",
+    "parallel-web-systems",
+    "peopledatalabs",
+    "playable",
+    "ploid",
+    "podium",
+    "qualified-com",
+    "radar-cnpj",
+    "refuel-ai",
+    "replyrai",
+    "revenuebase",
+    "rocketreach",
+    "salesflare",
+    "seam-ai",
+    "seamless-ai",
+    "sendpulse",
+    "serbia-company-data",
+    "sex-offenders-api",
+    "sirenic-eu",
+    "snov-io",
+    "spade",
+    "structify",
+    "sumble",
+    "supaglue",
+    "surfe",
+    "synthient",
+    "the-hog",
+    "thecompaniesapi",
+    "topograph",
+    "tradedatahub",
+    "uchecker",
+    "unbounce",
+    "unify",
+    "uplead",
+    "voygr",
+    "wappalyzer",
+    "wealth-x",
+    "wistia",
+    "zerobounce",
+    "zoca",
+    "zoominfo"
+   ],
+   "kebab-case": [
+    "adapt-io",
+    "agentum-lat",
+    "akta-pro",
+    "apifreaks-api-hub-for-developers",
+    "broke2builtai-com",
+    "bud-co",
+    "builtwith",
+    "caplight",
+    "clay-com",
+    "contextdev",
+    "databook",
+    "deeplead",
+    "demandbase",
+    "dotfile",
+    "editalmd",
+    "enrich-so",
+    "evrim",
+    "explorium",
+    "fingoal",
+    "globaldatabase-com",
+    "gojiberry-ai",
+    "hunter",
+    "hunter-io",
+    "infiniteaudience-ai",
+    "instantly-ai",
+    "kelvin",
+    "kickbox",
+    "koala-io",
+    "leadiq",
+    "lemlist",
+    "lusha",
+    "luxury-presence",
+    "macaroonnetwork-com",
+    "madkudu",
+    "mailersend",
+    "mcp360",
+    "moonscale",
+    "neuralverge-api",
+    "ntropy",
+    "ocean-io",
+    "openmercantil",
+    "orthogonal",
+    "parallel",
+    "parallel-ai",
+    "parallel-web-systems",
+    "playable",
+    "radar-cnpj",
+    "refuel-ai",
+    "replyrai",
+    "revenuebase",
+    "rocketreach",
+    "sendpulse",
+    "sex-offenders-api",
+    "sirenic-eu",
+    "snov-io",
+    "spade",
+    "structify",
+    "sumble",
+    "supaglue",
+    "surfe",
+    "the-hog",
+    "thecompaniesapi",
+    "tradedatahub",
+    "uchecker",
+    "unify",
+    "uplead",
+    "voygr",
+    "wistia",
+    "zerobounce",
+    "zoca",
+    "zoominfo"
+   ],
+   "snake_case": [
+    "abstract-api",
+    "apollo-api-documentation",
+    "apollo-enrich",
+    "apollo-io",
+    "coresignal",
+    "crunchbase-data",
+    "demandbase",
+    "dotfile",
+    "explorium",
+    "facebook-lead-ads",
+    "fingoal",
+    "harmonic-ai",
+    "heron",
+    "hunter",
+    "infiniteaudience-ai",
+    "lusha",
+    "madkudu",
+    "mailboxlayer",
+    "mcp360",
+    "ntropy",
+    "orthogonal",
+    "peopledatalabs",
+    "podium",
+    "qualified-com",
+    "refuel-ai",
+    "replyrai",
+    "rocketreach",
+    "sendpulse",
+    "snov-io",
+    "structify",
+    "supaglue",
+    "unbounce",
+    "wistia"
+   ],
+   "camelCase": [
+    "act-on",
+    "adapt-io",
+    "bitvore",
+    "demandbase",
+    "dun-and-bradstreet",
+    "even-financial",
+    "golden",
+    "golden-recursion",
+    "harmonic-ai",
+    "lemlist",
+    "linkedin-ads",
+    "luxury-presence",
+    "mobly",
+    "ocean-io",
+    "orthogonal",
+    "replyrai",
+    "rocketreach",
+    "seamless-ai",
+    "sendpulse",
+    "zoca",
+    "zoominfo"
+   ],
+   "other": [
+    "act-on",
+    "anyapi",
+    "builtwith",
+    "crunchbase-data",
+    "editalmd",
+    "fullcontact",
+    "globaldatabase-com",
+    "harmonic-ai",
+    "infiniteaudience-ai",
+    "kickbox",
+    "lemlist",
+    "macaroonnetwork-com",
+    "mailgun",
+    "openmercantil",
+    "radar-cnpj",
+    "sirenic-eu",
+    "supaglue",
+    "zoca",
+    "zoominfo"
+   ],
+   "PascalCase": [
+    "orthogonal",
+    "sirenic-eu"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "act-on",
+    "albacross",
+    "anyapi",
+    "apollo-api-documentation",
+    "apollo-enrich",
+    "apollo-io",
+    "bitvore",
+    "brand-api",
+    "broke2builtai-com",
+    "bud-co",
+    "coresignal",
+    "cracked",
+    "customeros",
+    "demandbase",
+    "demio",
+    "dotfile",
+    "dun-and-bradstreet",
+    "editalmd",
+    "enrich-so",
+    "even-financial",
+    "evrim",
+    "experian",
+    "fingoal",
+    "gojiberry-ai",
+    "golden",
+    "golden-recursion",
+    "harmonic-ai",
+    "heron",
+    "hunter",
+    "hunter-io",
+    "infiniteaudience-ai",
+    "instantly-ai",
+    "ipqualityscore",
+    "kelvin",
+    "kickbox",
+    "leadgenius",
+    "lemlist",
+    "loqate",
+    "lusha",
+    "luxury-presence",
+    "mailgun",
+    "mattermark",
+    "namegender",
+    "ntropy",
+    "openmercantil",
+    "orthogonal",
+    "owler",
+    "playable",
+    "ploid",
+    "podium",
+    "qualified-com",
+    "radar-cnpj",
+    "refuel-ai",
+    "salesflare",
+    "sendpulse",
+    "sirenic-eu",
+    "snov-io",
+    "spade",
+    "structify",
+    "surfe",
+    "synthient",
+    "the-hog",
+    "thecompaniesapi",
+    "topograph",
+    "uchecker",
+    "unify",
+    "uplead",
+    "wappalyzer",
+    "wistia",
+    "zoca",
+    "zoominfo"
+   ],
+   "snake_case": [
+    "akta-pro",
+    "apollo-api-documentation",
+    "apollo-io",
+    "banyan-systems",
+    "bud-co",
+    "builtwith",
+    "clay-com",
+    "contextdev",
+    "crunchbase-data",
+    "customeros",
+    "databook",
+    "demandbase",
+    "demio",
+    "dotfile",
+    "evrim",
+    "experian",
+    "explorium",
+    "fingoal",
+    "fullenrich",
+    "harmonic-ai",
+    "heron",
+    "hunter",
+    "infiniteaudience-ai",
+    "instantly-ai",
+    "ipqualityscore",
+    "kelvin",
+    "lusha",
+    "macaroonnetwork-com",
+    "madkudu",
+    "mailersend",
+    "ntropy",
+    "ocean-io",
+    "openmercantil",
+    "orthogonal",
+    "parallel",
+    "parallel-ai",
+    "parallel-web-systems",
+    "peopledatalabs",
+    "podium",
+    "refuel-ai",
+    "replyrai",
+    "revenuebase",
+    "salesflare",
+    "sendpulse",
+    "sirenic-eu",
+    "snov-io",
+    "structify",
+    "sumble",
+    "supaglue",
+    "synthient",
+    "tradedatahub",
+    "unbounce",
+    "unify",
+    "uplead",
+    "voygr",
+    "zoca"
+   ],
+   "camelCase": [
+    "act-on",
+    "bitvore",
+    "caplight",
+    "cb-insights",
+    "customeros",
+    "deeplead",
+    "demandbase",
+    "dotfile",
+    "dun-and-bradstreet",
+    "enrich-so",
+    "even-financial",
+    "fingoal",
+    "gojiberry-ai",
+    "infiniteaudience-ai",
+    "instantly-ai",
+    "koala-io",
+    "leadiq",
+    "leadspace",
+    "lemlist",
+    "leo",
+    "linkedin-ads",
+    "lusha",
+    "luxury-presence",
+    "mobly",
+    "moonscale",
+    "orthogonal",
+    "owler",
+    "playable",
+    "ploid",
+    "refuel-ai",
+    "salesflare",
+    "sendpulse",
+    "spade",
+    "thecompaniesapi",
+    "topograph",
+    "uchecker",
+    "wealth-x",
+    "wistia",
+    "zoca",
+    "zoominfo"
+   ],
+   "other": [
+    "brand-api"
+   ],
+   "kebab-case": [
+    "facebook-lead-ads"
+   ],
+   "PascalCase": [
+    "sendpulse"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "akta-pro",
+    "anyapi",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "apollo-api-documentation",
+    "apollo-io",
+    "bitvore",
+    "builtwith",
+    "clay-com",
+    "contextdev",
+    "cracked",
+    "crunchbase-data",
+    "crustapi",
+    "databook",
+    "deeplead",
+    "dotfile",
+    "enrich-so",
+    "even-financial",
+    "evrim",
+    "fingoal",
+    "gojiberry-ai",
+    "heron",
+    "hunter",
+    "hunter-io",
+    "infiniteaudience-ai",
+    "instantly-ai",
+    "lastdatabase",
+    "leadiq",
+    "lemlist",
+    "loqate",
+    "lusha",
+    "luxury-presence",
+    "macaroonnetwork-com",
+    "madkudu",
+    "mailgun",
+    "mobly",
+    "namegender",
+    "ntropy",
+    "openmercantil",
+    "owler",
+    "parallel",
+    "parallel-ai",
+    "parallel-web-systems",
+    "ploid",
+    "podium",
+    "qualified-com",
+    "radar-cnpj",
+    "replyrai",
+    "salesflare",
+    "seamless-ai",
+    "sendpulse",
+    "serbia-company-data",
+    "structify",
+    "synthient",
+    "the-hog",
+    "thecompaniesapi",
+    "topograph",
+    "tradedatahub",
+    "uchecker",
+    "unify",
+    "voygr",
+    "wappalyzer",
+    "zoca"
+   ],
+   "page": [
+    "act-on",
+    "apifreaks-api-hub-for-developers",
+    "apollo-api-documentation",
+    "apollo-io",
+    "contextdev",
+    "crustapi",
+    "databook",
+    "demandbase",
+    "dotfile",
+    "enrich-so",
+    "gojiberry-ai",
+    "harmonic-ai",
+    "heron",
+    "kelvin",
+    "lemlist",
+    "lusha",
+    "mattermark",
+    "namegender",
+    "neverbounce",
+    "ntropy",
+    "openmercantil",
+    "playable",
+    "ploid",
+    "radar-cnpj",
+    "seamless-ai",
+    "sirenic-eu",
+    "snov-io",
+    "thecompaniesapi",
+    "uchecker",
+    "unify",
+    "uplead",
+    "wistia",
+    "zoca"
+   ],
+   "offset": [
+    "act-on",
+    "akta-pro",
+    "bitvore",
+    "builtwith",
+    "even-financial",
+    "evrim",
+    "fingoal",
+    "heron",
+    "hunter",
+    "hunter-io",
+    "instantly-ai",
+    "lemlist",
+    "lusha",
+    "luxury-presence",
+    "mobly",
+    "openmercantil",
+    "refuel-ai",
+    "replyrai",
+    "salesflare",
+    "sendpulse",
+    "structify",
+    "tradedatahub",
+    "zoca"
+   ],
+   "cursor": [
+    "clay-com",
+    "contextdev",
+    "cracked",
+    "golden",
+    "golden-recursion",
+    "harmonic-ai",
+    "infiniteaudience-ai",
+    "leadiq",
+    "ntropy",
+    "openmercantil",
+    "parallel",
+    "parallel-ai",
+    "parallel-web-systems",
+    "ploid",
+    "podium",
+    "supaglue",
+    "synthient",
+    "the-hog",
+    "unify",
+    "wistia",
+    "zoca"
+   ],
+   "page_size": [
+    "act-on",
+    "bitvore",
+    "bud-co",
+    "caplight",
+    "demandbase",
+    "dun-and-bradstreet",
+    "golden",
+    "golden-recursion",
+    "openmercantil",
+    "radar-cnpj",
+    "supaglue",
+    "unify",
+    "zoca",
+    "zoominfo"
+   ],
+   "per_page": [
+    "apollo-api-documentation",
+    "apollo-io",
+    "demandbase",
+    "heron",
+    "kelvin",
+    "mattermark",
+    "ntropy",
+    "playable",
+    "snov-io",
+    "uplead",
+    "wistia"
+   ],
+   "size": [
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "harmonic-ai",
+    "hunter",
+    "lusha",
+    "mcp360",
+    "peopledatalabs",
+    "sendpulse",
+    "thecompaniesapi",
+    "wealth-x"
+   ],
+   "start": [
+    "apiverve",
+    "bitvore",
+    "crustapi",
+    "debounce",
+    "demandbase",
+    "sendpulse",
+    "structify"
+   ],
+   "count": [
+    "act-on",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "bitvore",
+    "sendpulse",
+    "uchecker"
+   ],
+   "skip": [
+    "apollo-api-documentation",
+    "apollo-io",
+    "explorium",
+    "instantly-ai",
+    "lemlist",
+    "sendpulse"
+   ],
+   "after": [
+    "apifreaks-api-hub-for-developers",
+    "qualified-com",
+    "salesflare",
+    "topograph",
+    "wappalyzer"
+   ],
+   "before": [
+    "apifreaks-api-hub-for-developers",
+    "deeplead",
+    "infiniteaudience-ai",
+    "qualified-com",
+    "salesflare"
+   ],
+   "page_token": [
+    "bud-co",
+    "zoominfo"
+   ],
+   "starting_after": [
+    "instantly-ai",
+    "qualified-com"
+   ],
+   "max_results": [
+    "contextdev"
+   ]
+  },
+  "property": {
+   "lower": [
+    "agentum-lat",
+    "akta-pro",
+    "bitvore",
+    "caplight",
+    "cb-insights",
+    "contextdev",
+    "crunchbase-data",
+    "customeros",
+    "databook",
+    "deeplead",
+    "demandbase",
+    "dotfile",
+    "enrich-so",
+    "explorium",
+    "fullenrich",
+    "gojiberry-ai",
+    "harmonic-ai",
+    "hunter",
+    "hunter-io",
+    "instantly-ai",
+    "leadiq",
+    "lemlist",
+    "leo",
+    "lusha",
+    "madkudu",
+    "mattermark",
+    "ocean-io",
+    "openmercantil",
+    "peopledatalabs",
+    "ploid",
+    "podium",
+    "qualified-com",
+    "revenuebase",
+    "seamless-ai",
+    "sendpulse",
+    "serbia-company-data",
+    "sumble",
+    "supaglue",
+    "surfe",
+    "the-hog",
+    "thecompaniesapi",
+    "topograph",
+    "zoominfo"
+   ],
+   "camelCase": [
+    "agentum-lat",
+    "bitvore",
+    "caplight",
+    "cb-insights",
+    "contextdev",
+    "customeros",
+    "deeplead",
+    "demandbase",
+    "enrich-so",
+    "gojiberry-ai",
+    "leadiq",
+    "lemlist",
+    "leo",
+    "lusha",
+    "madkudu",
+    "ocean-io",
+    "podium",
+    "qualified-com",
+    "seamless-ai",
+    "sendpulse",
+    "serbia-company-data",
+    "surfe",
+    "thecompaniesapi",
+    "topograph",
+    "zoominfo"
+   ],
+   "snake_case": [
+    "akta-pro",
+    "contextdev",
+    "crunchbase-data",
+    "databook",
+    "dotfile",
+    "enrich-so",
+    "explorium",
+    "fullenrich",
+    "harmonic-ai",
+    "hunter",
+    "hunter-io",
+    "instantly-ai",
+    "madkudu",
+    "mattermark",
+    "openmercantil",
+    "peopledatalabs",
+    "ploid",
+    "revenuebase",
+    "sumble",
+    "supaglue",
+    "the-hog"
+   ],
+   "other": [
+    "harmonic-ai",
+    "hunter",
+    "lemlist",
+    "openmercantil"
+   ]
+  }
+ }
+}

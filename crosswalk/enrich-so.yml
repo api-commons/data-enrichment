@@ -1,0 +1,28 @@
+provider: enrich-so
+apis_io: https://apis.io/providers/enrich-so/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - person
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/enrich-so-legacy-api-openapi.json#GET /v2/api/person
+  email_lookup:
+    path_segment:
+    - email-finder
+    properties:
+      email: email
+      result: status
+      catch_all: isCatchAll
+      domain: domain
+      first_name: firstName
+      last_name: lastName
+      score: confidence
+    core_coverage: 0.875
+    evidence:
+    - openapi/_original/enrich-so-v3-harvested-openapi.yml#POST /email-finder
+    - openapi/_original/enrich-so-v3-harvested-openapi.yml#POST /email-finder/batch

@@ -1,0 +1,20 @@
+provider: thecompaniesapi
+apis_io: https://apis.io/providers/thecompaniesapi/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  company_profile:
+    path_segment:
+    - companies
+    properties:
+      domain: domain
+      description: about
+      id: id
+      employee_count: size
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/thecompaniesapi-openapi.yml#GET /v2/companies
+    - openapi/_original/thecompaniesapi-openapi.yml#GET /v2/companies/{domain}
+    - openapi/_original/thecompaniesapi-openapi.yml#GET /v2/lists/{listId}/companies
+    - openapi/_original/thecompaniesapi-openapi.yml#GET /v2/lists/{listId}/companies/{domain}
+    - openapi/_original/thecompaniesapi-openapi.yml#POST /v2/companies

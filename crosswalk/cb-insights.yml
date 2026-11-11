@@ -1,0 +1,20 @@
+provider: cb-insights
+apis_io: https://apis.io/providers/cb-insights/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  company_profile:
+    path_segment:
+    - firmographics
+    - organizations
+    properties:
+      name: name
+      description:
+      - summary
+      - description
+      employee_count: headcount
+      limit: limit
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/cb-insights-api-v2-openapi.json#POST /v2/firmographics
+    - openapi/_original/cb-insights-api-v2-openapi.json#POST /v2/organizations

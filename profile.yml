@@ -1,0 +1,546 @@
+context: data-enrichment
+name: Data Enrichment
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Data Enrichment
+  - Lead Generation
+  - B2B Data
+  - People Data
+  - Company Data
+  - Firmographics
+  - Contact Data
+  - Email Finder
+  - Email Verification
+  providers_with_harvested_openapi: 137
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates:
+  apollo-io:
+  - apollo-api-documentation
+  golden:
+  - golden-recursion
+  parallel-ai:
+  - parallel
+  - parallel-web-systems
+  windfall:
+  - windfall-data
+shared_specs: {}
+concepts:
+  person_profile:
+    segments_seen:
+      people: 9
+      enrich: 7
+      person: 7
+      persons: 4
+      prospects: 3
+      contacts: 1
+    providers_exposing: 26
+    providers_with_readable_schema: 22
+    operations:
+    - operation: POST collection
+      providers: 16
+      share: 0.615
+      tier: core
+    - operation: GET collection
+      providers: 14
+      share: 0.538
+      tier: core
+    - operation: GET item
+      providers: 8
+      share: 0.308
+      tier: extended
+    - operation: DELETE item
+      providers: 1
+      share: 0.038
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.038
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.038
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 12
+      share: 0.545
+      type: string
+      spellings:
+      - name
+      - full_name
+      - fullName
+    - name: company_name
+      tier: extended
+      providers: 10
+      share: 0.455
+      type: string
+      spellings:
+      - company
+      - companyName
+      - company_name
+      - job_company_name
+    - name: first_name
+      tier: extended
+      providers: 10
+      share: 0.455
+      type: string
+      spellings:
+      - first_name
+      - firstName
+    - name: last_name
+      tier: extended
+      providers: 10
+      share: 0.455
+      type: string
+      spellings:
+      - last_name
+      - lastName
+    - name: location
+      tier: extended
+      providers: 10
+      share: 0.455
+      type: string
+      spellings:
+      - location
+      - city
+      - location_name
+    - name: job_title
+      tier: extended
+      providers: 9
+      share: 0.409
+      type: string
+      spellings:
+      - title
+      - jobTitle
+      - job_title
+      - headline
+      - job_title_role
+    - name: linkedin_url
+      tier: extended
+      providers: 9
+      share: 0.409
+      type: string
+      spellings:
+      - linkedinUrl
+      - linkedin_url
+      - linkedin
+      - liUrl
+    - name: company_domain
+      tier: extended
+      providers: 8
+      share: 0.364
+      type: string
+      spellings:
+      - domain
+      - companyDomain
+      - company_website
+      - job_company_website
+    - name: email
+      tier: extended
+      providers: 7
+      share: 0.318
+      type: string
+      spellings:
+      - email
+      - emails
+      - workEmail
+      - personalEmails
+      - work_email
+      - personal_emails
+    - name: status
+      tier: extended
+      providers: 6
+      share: 0.273
+      type: string
+      spellings:
+      - status
+    - name: id
+      tier: extended
+      providers: 5
+      share: 0.227
+      type: string
+      spellings:
+      - id
+    long_tail_count: 348
+    long_tail_sample:
+    - country
+    - industry
+    - limit
+    - phone
+    - seniority
+    - updated_at
+    - credits_used
+    - departments
+    - education
+    - experience
+    - person_id
+    - size
+    - skills
+    - state
+    - company_id
+    - company_size
+    - contacts
+    - created_at
+    - credits_remaining
+    - description
+    - filters
+    - interests
+    - job_start_date
+    - linkedin_id
+    - middle_name
+    - mobile_phones
+    - properties
+    - prospect_id
+    - reveal_emails
+    - reveal_phones
+    - search
+    - seniorities
+    - socials
+    - summary
+    - technologies
+    - access_granted
+    - active_positions
+    - activities
+    - added
+    - address
+  company_profile:
+    segments_seen:
+      companies: 19
+      company: 11
+      organizations: 8
+      enrich: 5
+      organization: 2
+      firmographics: 1
+    providers_exposing: 35
+    providers_with_readable_schema: 31
+    operations:
+    - operation: POST collection
+      providers: 23
+      share: 0.657
+      tier: core
+    - operation: GET collection
+      providers: 20
+      share: 0.571
+      tier: core
+    - operation: GET item
+      providers: 18
+      share: 0.514
+      tier: core
+    - operation: DELETE item
+      providers: 5
+      share: 0.143
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 3
+      share: 0.086
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 22
+      share: 0.71
+      type: string
+      spellings:
+      - name
+      - companyName
+      - company_name
+    - name: domain
+      tier: core
+      providers: 19
+      share: 0.613
+      type: string
+      spellings:
+      - domain
+      - website
+      - website_url
+    - name: description
+      tier: core
+      providers: 17
+      share: 0.548
+      type: string
+      spellings:
+      - description
+      - summary
+      - shortDescription
+      - short_description
+      - about
+    - name: id
+      tier: core
+      providers: 17
+      share: 0.548
+      type: string
+      spellings:
+      - id
+      - _id
+    - name: employee_count
+      tier: extended
+      providers: 13
+      share: 0.419
+      type: integer
+      spellings:
+      - employeeCount
+      - size
+      - employee_count
+      - headcount
+      - employees
+      - employeeRange
+    - name: industry
+      tier: extended
+      providers: 13
+      share: 0.419
+      type: string
+      spellings:
+      - industry
+      - industries
+      - naics
+      - sic
+    - name: country
+      tier: extended
+      providers: 12
+      share: 0.387
+      type: string
+      spellings:
+      - country
+      - hqCountry
+      - countryCode
+    - name: created_at
+      tier: extended
+      providers: 8
+      share: 0.258
+      type: string
+      spellings:
+      - createdAt
+      - created_at
+    - name: city
+      tier: extended
+      providers: 7
+      share: 0.226
+      type: string
+      spellings:
+      - city
+    - name: limit
+      tier: extended
+      providers: 7
+      share: 0.226
+      type: integer
+      spellings:
+      - limit
+    - name: linkedin_url
+      tier: extended
+      providers: 7
+      share: 0.226
+      type: string
+      spellings:
+      - linkedinUrl
+      - linkedin_url
+      - linkedin
+      - liUrl
+    - name: location
+      tier: extended
+      providers: 7
+      share: 0.226
+      type: object
+      spellings:
+      - location
+    - name: revenue
+      tier: extended
+      providers: 7
+      share: 0.226
+      type: string
+      spellings:
+      - revenue
+      - revenueRange
+      - revenue_range
+      - annualRevenue
+    - name: state
+      tier: extended
+      providers: 7
+      share: 0.226
+      type: string
+      spellings:
+      - state
+    - name: status
+      tier: extended
+      providers: 7
+      share: 0.226
+      type: string
+      spellings:
+      - status
+    - name: updated_at
+      tier: extended
+      providers: 7
+      share: 0.226
+      type: string
+      spellings:
+      - updatedAt
+      - updated_at
+    long_tail_count: 605
+    long_tail_sample:
+    - address
+    - company_size
+    - founded_year
+    - phone
+    - type
+    - company_type
+    - competitors
+    - keywords
+    - logo_url
+    - phones
+    - query
+    - technologies
+    - ticker
+    - company_id
+    - fields
+    - funding
+    - headquarters
+    - legal_form
+    - legal_name
+    - offset
+    - sic_codes
+    - sort_order
+    - tags
+    - alexa_rank
+    - aliases
+    - attributes
+    - business_models
+    - business_name
+    - company_status
+    - contacts
+    - continent
+    - credits_used
+    - domains
+    - email
+    - emails
+    - filters
+    - founded_on
+    - founding_date
+    - funding_rounds
+    - linkedin_id
+  email_lookup:
+    segments_seen:
+      email-finder: 4
+      email-verifier: 3
+      email-verification: 2
+      find: 1
+      verify: 1
+    providers_exposing: 7
+    providers_with_readable_schema: 6
+    operations:
+    - operation: POST collection
+      providers: 5
+      share: 0.714
+      tier: core
+    - operation: GET collection
+      providers: 3
+      share: 0.429
+      tier: extended
+    - operation: GET item
+      providers: 1
+      share: 0.143
+      tier: long-tail
+    properties:
+    - name: email
+      tier: core
+      providers: 6
+      share: 1.0
+      type: string
+      spellings:
+      - email
+    - name: result
+      tier: core
+      providers: 5
+      share: 0.833
+      type: string
+      spellings:
+      - status
+      - result
+    - name: catch_all
+      tier: core
+      providers: 4
+      share: 0.667
+      type: boolean
+      spellings:
+      - accept_all
+      - isCatchAll
+      - catch_all
+    - name: domain
+      tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - domain
+    - name: first_name
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - first_name
+      - firstName
+    - name: last_name
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - last_name
+      - lastName
+    - name: linkedin_url
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - linkedin_url
+      - linkedin
+    - name: score
+      tier: core
+      providers: 3
+      share: 0.5
+      type: integer
+      spellings:
+      - score
+      - confidence
+    long_tail_count: 32
+    long_tail_sample:
+    - block
+    - company
+    - disposable
+    - found
+    - gibberish
+    - mx_records
+    - phone_number
+    - position
+    - regexp
+    - smtp_check
+    - smtp_server
+    - sources
+    - twitter
+    - verification
+    - webmail
+    - alternate_emails
+    - batch_id
+    - charged_credits
+    - company_website
+    - credits_used
+    - deprecation_notice
+    - duplicates_removed
+    - filename
+    - item_count
+    - job_title
+    - name
+    - original_count
+    - process_id
+    - provider
+    - source_type
+    - verification_status
+    - webhook_url

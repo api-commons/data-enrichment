@@ -1,0 +1,15 @@
+provider: podium
+apis_io: https://apis.io/providers/podium/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  company_profile:
+    path_segment:
+    - organizations
+    properties:
+      created_at: createdAt
+      updated_at: updatedAt
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/podium-accounts-openapi-original.json#GET /v4/organizations/{uid}
+    - openapi/_original/podium-accounts-openapi.yml#GET /v4/organizations/{uid}

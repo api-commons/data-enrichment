@@ -1,0 +1,18 @@
+provider: the-hog
+apis_io: https://apis.io/providers/the-hog/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  company_profile:
+    path_segment:
+    - company
+    properties:
+      name: name
+      domain: website
+      description: description
+      employee_count: employee_count
+      industry: industry
+      linkedin_url: linkedin_url
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/the-hog-openapi.json#POST /api/v1/platform/scrapers/linkedin/company

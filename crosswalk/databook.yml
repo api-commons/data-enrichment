@@ -1,0 +1,14 @@
+provider: databook
+apis_io: https://apis.io/providers/databook/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  company_profile:
+    path_segment:
+    - companies
+    properties:
+      name: company_name
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/databook-openapi.json#GET /v1/asset/companies

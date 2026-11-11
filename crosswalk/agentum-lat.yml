@@ -1,0 +1,12 @@
+provider: agentum-lat
+apis_io: https://apis.io/providers/agentum-lat/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  company_profile:
+    path_segment:
+    - company
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/agentum-lat-business-openapi.json#GET /company

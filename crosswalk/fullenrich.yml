@@ -1,0 +1,17 @@
+provider: fullenrich
+apis_io: https://apis.io/providers/fullenrich/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - enrich
+    properties:
+      company_name: company_name
+      first_name: first_name
+      last_name: last_name
+      linkedin_url: linkedin_url
+      company_domain: domain
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/fullenrich-openapi.yml#POST /contact/enrich/bulk

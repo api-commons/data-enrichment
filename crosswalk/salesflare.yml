@@ -1,0 +1,13 @@
+provider: salesflare
+apis_io: https://apis.io/providers/salesflare/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - persons
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/salesflare-api-openapi.yml#GET /persons
+    - openapi/_original/salesflare-openapi.json#GET /persons

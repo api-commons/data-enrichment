@@ -1,0 +1,18 @@
+provider: instantly-ai
+apis_io: https://apis.io/providers/instantly-ai/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  email_lookup:
+    path_segment:
+    - email-verification
+    properties:
+      email: email
+      result: status
+      catch_all: catch_all
+    core_coverage: 0.375
+    evidence:
+    - openapi/_original/instantly-ai-api-v2-openapi.json#GET /api/v2/email-verification/{email}
+    - openapi/_original/instantly-ai-api-v2-openapi.json#POST /api/v2/email-verification
+    - openapi/_original/instantly-ai-api-v2-openapi.yml#GET /api/v2/email-verification/{email}
+    - openapi/_original/instantly-ai-api-v2-openapi.yml#POST /api/v2/email-verification

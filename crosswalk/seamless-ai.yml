@@ -1,0 +1,56 @@
+provider: seamless-ai
+apis_io: https://apis.io/providers/seamless-ai/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - contacts
+    properties:
+      name:
+      - name
+      - fullName
+      company_name:
+      - company
+      - companyName
+      first_name: firstName
+      last_name: lastName
+      location: city
+      job_title:
+      - title
+      - jobTitle
+      linkedin_url: liUrl
+      company_domain:
+      - domain
+      - companyDomain
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/seamless-ai-public-api-openapi-original.json#POST /search/contacts
+  company_profile:
+    path_segment:
+    - companies
+    properties:
+      name:
+      - name
+      - companyName
+      domain: domain
+      description: description
+      employee_count: employeeCount
+      industry:
+      - industries
+      - industry
+      country: country
+      created_at: createdAt
+      city: city
+      limit: limit
+      linkedin_url: liUrl
+      location: location
+      revenue:
+      - annualRevenue
+      - revenueRange
+      state: state
+      updated_at: updatedAt
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/seamless-ai-public-api-openapi-original.json#GET /companies
+    - openapi/_original/seamless-ai-public-api-openapi-original.json#POST /search/companies

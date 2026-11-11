@@ -1,0 +1,43 @@
+provider: hunter
+apis_io: https://apis.io/providers/hunter/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - people
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/hunter-openapi.json#GET /discover/people
+    - openapi/_original/hunter-openapi.json#POST /discover/people
+  company_profile:
+    path_segment:
+    - companies
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/hunter-openapi.json#DELETE /companies/{id}
+    - openapi/_original/hunter-openapi.json#DELETE /company-lists/{id}/companies/{company_id}
+    - openapi/_original/hunter-openapi.json#GET /companies
+    - openapi/_original/hunter-openapi.json#GET /companies/{id}
+    - openapi/_original/hunter-openapi.json#POST /companies
+  email_lookup:
+    path_segment:
+    - email-finder
+    - email-verifier
+    properties:
+      email: email
+      result:
+      - status
+      - result
+      catch_all: accept_all
+      domain: domain
+      first_name: first_name
+      last_name: last_name
+      linkedin_url: linkedin_url
+      score: score
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/hunter-openapi.json#GET /email-finder
+    - openapi/_original/hunter-openapi.json#GET /email-verifier

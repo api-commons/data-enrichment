@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/data-enrichment/main/schema/person_profile.json",
+  "title": "Person Profile",
+  "description": "The common person_profile in Data Enrichment, distilled from 22 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.545,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "name",
+        "full_name",
+        "fullName"
+      ]
+    },
+    "company_name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.455,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "company",
+        "companyName",
+        "company_name",
+        "job_company_name"
+      ]
+    },
+    "first_name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.455,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "first_name",
+        "firstName"
+      ]
+    },
+    "last_name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.455,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "last_name",
+        "lastName"
+      ]
+    },
+    "location": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.455,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "location",
+        "city",
+        "location_name"
+      ]
+    },
+    "job_title": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.409,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "title",
+        "jobTitle",
+        "job_title",
+        "headline",
+        "job_title_role"
+      ]
+    },
+    "linkedin_url": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.409,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "linkedinUrl",
+        "linkedin_url",
+        "linkedin",
+        "liUrl"
+      ]
+    },
+    "company_domain": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.364,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "domain",
+        "companyDomain",
+        "company_website",
+        "job_company_website"
+      ]
+    },
+    "email": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.318,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "email",
+        "emails",
+        "workEmail",
+        "personalEmails",
+        "work_email",
+        "personal_emails"
+      ],
+      "format": "email"
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.273,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "status"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.227,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "id"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "data-enrichment",
+    "concept": "person_profile",
+    "providers": 22,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

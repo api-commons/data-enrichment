@@ -1,0 +1,14 @@
+provider: serbia-company-data
+apis_io: https://apis.io/providers/serbia-company-data/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  company_profile:
+    path_segment:
+    - company
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/serbia-company-data-openapi.json#GET /api/company
+    - openapi/_original/serbia-company-data-openapi.json#POST /api/company/batch

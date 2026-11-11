@@ -1,0 +1,15 @@
+provider: revenuebase
+apis_io: https://apis.io/providers/revenuebase/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  email_lookup:
+    path_segment:
+    - verify
+    properties:
+      email: email
+      result: status
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/revenuebase-openapi.json#POST /v2/email/verify
+    - openapi/_original/revenuebase-openapi.json#POST /v2/email/verify/batch

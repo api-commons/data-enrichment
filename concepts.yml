@@ -1,0 +1,75 @@
+context: data-enrichment
+name: Data Enrichment
+intro: >-
+  The common data-enrichment vocabulary -- the person profiles and company profiles returned
+  when you look someone or something up, and the email lookups that find and verify an address
+  -- distilled from the APIs that already exist. These are results, not records you own: CRM
+  owns the contacts and companies you keep.
+tags: [Data Enrichment, Lead Generation, B2B Data, People Data, Company Data, Firmographics, Contact Data, Email Finder, Email Verification]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url, credits, request_id, likelihood]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, profile_id]
+  name: [full_name, display_name, company_name, organization_name]
+  linkedin_url: [linkedin, linkedin_profile_url, linkedin_handle, li_url]
+  country: [country_code, location_country, hq_country]
+  updated_at: [updated, last_updated, refreshed_at, last_seen]
+
+concepts:
+  person_profile:
+    path: /person-profiles
+    segments: [people, person, persons, "enrich@person|people|contact", "profiles@person|people|linkedin", "contacts@enrich|search|find", prospects, leads@search|enrich]
+    aliases:
+      first_name: [firstname, given_name, first]
+      last_name: [lastname, family_name, surname, last]
+      email: [work_email, emails, email_address, personal_emails, recommended_personal_email]
+      phone: [phone_number, phones, mobile_phone, phone_numbers]
+      job_title: [title, position, job_title_role, headline, current_title]
+      company_name: [company, organization, job_company_name, employer, current_company]
+      company_domain: [domain, company_website, website, job_company_website]
+      seniority: [job_title_levels, level, management_level]
+      location: [city, location_name, region, locality]
+  company_profile:
+    path: /company-profiles
+    segments: [companies, company, organizations, organization, "enrich@company|companies|organization", firmographics, "domains@company|enrich", businesses@search|enrich]
+    aliases:
+      domain: [website, website_url, primary_domain, url]
+      industry: [industries, sector, naics, sic, category]
+      employee_count: [employees, size, headcount, employee_range, employees_count, estimated_num_employees]
+      revenue: [annual_revenue, estimated_revenue, revenue_range]
+      founded_year: [founded, year_founded]
+      description: [summary, about, short_description]
+      technologies: [tech_stack, technographics]
+  email_lookup:
+    path: /email-lookups
+    segments: [email-finder, email_finder, emailfinder, email-verifier, email_verifier, verify@email|emails, "find@email|emails", email-verification, email_verification, emails@find|verify|lookup, verifications@email]
+    aliases:
+      email: [email_address, address]
+      result: [status, verdict, deliverability, state, is_valid, valid, result_code]
+      score: [confidence, quality_score, risk_score]
+      disposable: [is_disposable, is_disposable_email]
+      catch_all: [accept_all, is_catch_all]
+
+duplicates:
+  apollo-io: [apollo-api-documentation]
+  golden: [golden-recursion]
+  parallel-ai: [parallel, parallel-web-systems]
+  windfall: [windfall-data]
+
+findings:
+  - "A company profile agrees on name, domain, description and id -- the domain is the join key
+    of B2B data, and every enrichment provider returns it."
+  - "A person profile agrees only on a name: email, title, company and LinkedIn URL are each
+    returned by a minority, because people data is sold field by field and each vendor's coverage
+    differs."
+  - "An email lookup agrees on the email, a result and a confidence score, and whether the domain
+    is catch-all -- verification is the most uniform enrichment product."
+decisions:
+  - "Enrichment returns results about people and companies; CRM owns the contacts and companies
+    you keep. Profiles are `/person-profiles` and `/company-profiles`, lookups `/email-lookups`."
+  - "Prospects, and people or contacts beneath an enrich or search path, are person profiles;
+    organizations and firmographics are company profiles."
+  - "Duplicates merged: Apollo, Golden, Parallel, Windfall."

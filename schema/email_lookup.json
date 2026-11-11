@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/data-enrichment/main/schema/email_lookup.json",
+  "title": "Email Lookup",
+  "description": "The common email_lookup in Data Enrichment, distilled from 6 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "email"
+      ],
+      "format": "email"
+    },
+    "result": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.833,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "status",
+        "result"
+      ]
+    },
+    "catch_all": {
+      "type": "boolean",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "accept_all",
+        "isCatchAll",
+        "catch_all"
+      ]
+    },
+    "domain": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "domain"
+      ]
+    },
+    "first_name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "first_name",
+        "firstName"
+      ]
+    },
+    "last_name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "last_name",
+        "lastName"
+      ]
+    },
+    "linkedin_url": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "linkedin_url",
+        "linkedin"
+      ]
+    },
+    "score": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "score",
+        "confidence"
+      ]
+    }
+  },
+  "required": [],
+  "x-commons": {
+    "context": "data-enrichment",
+    "concept": "email_lookup",
+    "providers": 6,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

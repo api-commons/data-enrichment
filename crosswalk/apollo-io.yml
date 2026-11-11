@@ -1,0 +1,21 @@
+provider: apollo-io
+apis_io: https://apis.io/providers/apollo-io/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  person_profile:
+    path_segment:
+    - people
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/apollo-api-documentation-apollo-rest-api-openapi.json#GET /people/{id}
+    - openapi/_original/apollo-io-apollo-rest-api-openapi.json#GET /people/{id}
+  company_profile:
+    path_segment:
+    - organizations
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/apollo-api-documentation-apollo-rest-api-openapi.json#GET /organizations/{id}
+    - openapi/_original/apollo-io-apollo-rest-api-openapi.json#GET /organizations/{id}

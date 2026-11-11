@@ -1,0 +1,15 @@
+provider: deeplead
+apis_io: https://apis.io/providers/deeplead/
+context: data-enrichment
+generated: '2026-11-11'
+concepts:
+  email_lookup:
+    path_segment:
+    - find
+    properties:
+      email: email
+      domain: domain
+      linkedin_url: linkedin
+    core_coverage: 0.375
+    evidence:
+    - openapi/_original/deeplead-api-openapi.json#POST /persons/email/find

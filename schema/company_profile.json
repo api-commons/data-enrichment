@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/data-enrichment/main/schema/company_profile.json",
+  "title": "Company Profile",
+  "description": "The common company_profile in Data Enrichment, distilled from 31 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.71,
+      "x-commons-providers": 22,
+      "x-commons-spellings": [
+        "name",
+        "companyName",
+        "company_name"
+      ]
+    },
+    "domain": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.613,
+      "x-commons-providers": 19,
+      "x-commons-spellings": [
+        "domain",
+        "website",
+        "website_url"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.548,
+      "x-commons-providers": 17,
+      "x-commons-spellings": [
+        "description",
+        "summary",
+        "shortDescription",
+        "short_description",
+        "about"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.548,
+      "x-commons-providers": 17,
+      "x-commons-spellings": [
+        "id",
+        "_id"
+      ]
+    },
+    "employee_count": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.419,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "employeeCount",
+        "size",
+        "employee_count",
+        "headcount",
+        "employees",
+        "employeeRange"
+      ]
+    },
+    "industry": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.419,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "industry",
+        "industries",
+        "naics",
+        "sic"
+      ]
+    },
+    "country": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.387,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "country",
+        "hqCountry",
+        "countryCode"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.258,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "createdAt",
+        "created_at"
+      ],
+      "format": "date-time"
+    },
+    "city": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.226,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "city"
+      ]
+    },
+    "limit": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.226,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "limit"
+      ]
+    },
+    "linkedin_url": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.226,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "linkedinUrl",
+        "linkedin_url",
+        "linkedin",
+        "liUrl"
+      ]
+    },
+    "location": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.226,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "location"
+      ]
+    },
+    "revenue": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.226,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "revenue",
+        "revenueRange",
+        "revenue_range",
+        "annualRevenue"
+      ]
+    },
+    "state": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.226,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "state"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.226,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "status"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.226,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "updatedAt",
+        "updated_at"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "data-enrichment",
+    "concept": "company_profile",
+    "providers": 31,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}
